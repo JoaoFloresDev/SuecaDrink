@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  Sueca Drink
+
+  Created by Joao Flores on 10/01/20.
+  Copyright © 2020 Gustavo Lima. All rights reserved.
+*/
+// A
+"Escolha um jogador para beber." = "Choose a player to drink.";
+
+//2
+"Escolha dois jogadores para beber." = "Choose two players to drink.";
+
+//3
+"Escolha três jogadores para beber." = "Choose three players to drink.";
+
+//4
+"Saída" = "Exit";
+
+//5
+"Stop" = "Stop";
+
+//6
+"Continência" = "Continuity";
+
+//7
+"PI" = "PI";
+
+//8
+"Palavra não dita" =  "Unspoken word";
+
+//9
+"Cafofo" = "Cafofo";
+
+//10
+"Crie uma regra." = "Create a rule.";
+
+//J
+"Homens bebem." = "Men drink.";
+
+//Q
+"Mulheres bebem." = "Women drink.";
+
+//K
+"Todos bebem" = "Everyone drinks";
