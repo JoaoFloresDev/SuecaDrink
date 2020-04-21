@@ -13,6 +13,7 @@
 		3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10C2237EBE900174399 /* Assets.xcassets */; };
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
 		3D6EA11A2238362800174399 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6EA1192238362800174399 /* Calculator.swift */; };
+		466FCA101DCD957CE21F78BE /* Pods_Sueca_Drink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9595FA7A1DA7FDE93A2628F /* Pods_Sueca_Drink.framework */; };
 		C422674A237212D5000A6DA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4226749237212D5000A6DA3 /* Default-568h@2x.png */; };
 		C464352C23C899CC0033024D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C464352E23C899CC0033024D /* Localizable.strings */; };
 		C4885CF4236CBADC004B1556 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF2236CBADC004B1556 /* CreditsViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25F4E1BD1320BD1155F89A48 /* Pods-Sueca Drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.release.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.release.xcconfig"; sourceTree = "<group>"; };
 		3D6EA1022237EBE500174399 /* Sueca Drink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sueca Drink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6EA1052237EBE500174399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D6EA1072237EBE500174399 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		3D6EA10F2237EBE900174399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D6EA1112237EBE900174399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D6EA1192238362800174399 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		77E7C4D4F5D4D61E95D9C764 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
+		B9595FA7A1DA7FDE93A2628F /* Pods_Sueca_Drink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sueca_Drink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4226749237212D5000A6DA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C464352623C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C464352723C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				466FCA101DCD957CE21F78BE /* Pods_Sueca_Drink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				C4226749237212D5000A6DA3 /* Default-568h@2x.png */,
 				3D6EA1042237EBE500174399 /* Calculadora */,
 				3D6EA1032237EBE500174399 /* Products */,
+				7F38B1CF992CC29455A2A5C4 /* Pods */,
+				7148C6ABB05344AAC41B8EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,24 @@
 			path = Control;
 			sourceTree = "<group>";
 		};
+		7148C6ABB05344AAC41B8EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9595FA7A1DA7FDE93A2628F /* Pods_Sueca_Drink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F38B1CF992CC29455A2A5C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77E7C4D4F5D4D61E95D9C764 /* Pods-Sueca Drink.debug.xcconfig */,
+				25F4E1BD1320BD1155F89A48 /* Pods-Sueca Drink.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Sueca Drink" */;
 			buildPhases = (
+				4F542C539BEB6287D71BAE89 /* [CP] Check Pods Manifest.lock */,
 				3D6EA0FE2237EBE500174399 /* Sources */,
 				3D6EA0FF2237EBE500174399 /* Frameworks */,
 				3D6EA1002237EBE500174399 /* Resources */,
+				C2EE1DD2140FF80BAA6861F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +210,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F542C539BEB6287D71BAE89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sueca Drink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EE1DD2140FF80BAA6861F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D6EA0FE2237EBE500174399 /* Sources */ = {
@@ -356,6 +425,7 @@
 		};
 		3D6EA1152237EBE900174399 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E7C4D4F5D4D61E95D9C764 /* Pods-Sueca Drink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +447,7 @@
 		};
 		3D6EA1162237EBE900174399 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F4E1BD1320BD1155F89A48 /* Pods-Sueca Drink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,8 +8,11 @@
 
 import UIKit
 import StoreKit
+import GoogleMobileAds
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GADBannerViewDelegate {
+    
+    var bannerView: GADBannerView!
     
     var lastValue = 100
     var ratingShow = false
@@ -114,7 +117,7 @@ class ViewController: UIViewController {
         self.cardImg.transform = CGAffineTransform(scaleX: 0.7, y: 0.7 )
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
             self.cardImg.image = UIImage(named:
-            NSLocalizedString(self.vetCardsImgName[newCard], comment: ""))
+                NSLocalizedString(self.vetCardsImgName[newCard], comment: ""))
             
             self.cardImg.transform = .identity
         }, completion: nil)
@@ -123,41 +126,58 @@ class ViewController: UIViewController {
         titleText.text = vetTitleText[newCard]
         descriptionText.text = vetDescriptionText[newCard]
         
-        if(newCard == 1 && !UserDefaults.standard.bool(forKey: "NoFirsGame")) {
-            UserDefaults.setValue(true, forKey: "NoFirsGame")
+        if(newCard == 1) {
             rateApp()
         }
+        
     }
-    
-//    @IBAction func menu(_ sender: Any) {
-//
-//        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//
-//        let GoOrdemDasCartas = UIAlertAction(title: "Regras", style: .default, handler: { (action) -> Void in
-//            self.performSegue(withIdentifier: "roles", sender: nil)
-//        })
-//
-//        let EditAction = UIAlertAction(title: "Editar regras", style: .default, handler: { (action) -> Void in
-//            self.performSegue(withIdentifier: "editRoles", sender: nil)
-//        })
-//
-//        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
-//
-//        optionMenu.addAction(GoOrdemDasCartas)
-//        optionMenu.addAction(EditAction)
-//
-//        optionMenu.addAction(cancelAction)
-//
-//        self.present(optionMenu, animated: true, completion: nil)
-//
-//    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["0fc9fc3e2c3f88db16052fa3e76d5a57", "9788822C-50DB-4EBA-AA7E-6CF69E0BFB15", "ED5ABE03-62C4-4D43-8811-995D5E254D4A"]
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+
+        addBannerViewToView(bannerView)
+        
+        bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
+        bannerView.rootViewController = self
+        
+        bannerView.load(GADRequest())
+        bannerView.delegate = self
+        
+//        bannerView.adSize = GADAdSizeFromCGSize(CGSize(width: 320, height: 100))
     }
     
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+        ])
+    }
+    
+    func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            completion()
+        }
+    }
+    
+    //    MARK: - RATE APP
     func rateApp() {
         if #available(iOS 10.3, *) {
             SKStoreReviewController.requestReview()
@@ -168,5 +188,39 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-}
+    
+    
+//    MARK: - ADS PROP
+    
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+      print("adViewDidReceiveAd")
+    }
 
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+        didFailToReceiveAdWithError error: GADRequestError) {
+      print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+
+    /// Tells the delegate that a full-screen view will be presented in response
+    /// to the user clicking on an ad.
+    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+      print("adViewWillPresentScreen")
+    }
+
+    /// Tells the delegate that the full-screen view will be dismissed.
+    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewWillDismissScreen")
+    }
+
+    /// Tells the delegate that the full-screen view has been dismissed.
+    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+      print("adViewDidDismissScreen")
+    }
+
+    /// Tells the delegate that a user click will open another app (such as
+    /// the App Store), backgrounding the current app.
+    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+      print("adViewWillLeaveApplication")
+    }
+}
