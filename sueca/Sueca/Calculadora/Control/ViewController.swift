@@ -135,19 +135,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["0fc9fc3e2c3f88db16052fa3e76d5a57", "9788822C-50DB-4EBA-AA7E-6CF69E0BFB15", "ED5ABE03-62C4-4D43-8811-995D5E254D4A"]
-        
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-
         addBannerViewToView(bannerView)
-        
         bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
         bannerView.rootViewController = self
         
         bannerView.load(GADRequest())
         bannerView.delegate = self
-        
-//        bannerView.adSize = GADAdSizeFromCGSize(CGSize(width: 320, height: 100))
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {
@@ -182,7 +176,6 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         if #available(iOS 10.3, *) {
             SKStoreReviewController.requestReview()
         }
-        ratingShow = false
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

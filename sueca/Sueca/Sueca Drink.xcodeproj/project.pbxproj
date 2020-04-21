@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -133,7 +133,6 @@
 				77E7C4D4F5D4D61E95D9C764 /* Pods-Sueca Drink.debug.xcconfig */,
 				25F4E1BD1320BD1155F89A48 /* Pods-Sueca Drink.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -429,7 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -437,7 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
@@ -451,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -459,7 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7;
+				MARKETING_VERSION = 8;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
