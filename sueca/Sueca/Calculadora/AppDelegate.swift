@@ -13,12 +13,26 @@ import GoogleMobileAds
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var products: [SKProduct] = []
+    var defaults = UserDefaults.standard
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //
 //        GADMobileAds.configure(withApplicationID: "ca-app-pub-8858389345934911~9506680852")
         GADMobileAds.sharedInstance().start(completionHandler: nil)
+        
+        RazeFaceProducts.store.requestProducts{ [weak self] success, products in
+          guard let self = self else { return }
+          if success {
+            self.products = products!
+            if(self.products.count > 0) {
+                let isProductPurchased = RazeFaceProducts.store.isProductPurchased(self.products[0].productIdentifier)
+                if(isProductPurchased) {
+                    self.defaults.set(true, forKey: "Purchased")
+                }
+            }
+          }
+        }
          return true
     }
 

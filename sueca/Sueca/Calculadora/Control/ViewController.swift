@@ -13,6 +13,7 @@ import GoogleMobileAds
 class ViewController: UIViewController, GADBannerViewDelegate {
     
     var bannerView: GADBannerView!
+    var defaults = UserDefaults.standard
     
     var lastValue = 100
     var ratingShow = false
@@ -32,7 +33,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Saída",
             
             //5
-            "Stop",
+            "Eu nunca",
             
             //6
             "Continência",
@@ -44,7 +45,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Palavra não dita",
             
             //9
-            "Cafofo",
+            "C ou S",
             
             //10
             "Crie uma regra",
@@ -74,7 +75,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
             
             //5
-            "Escolha uma palavra qualquer, o próximo jogador deve repetir a palavra anterior e adicionar uma, e assim por diante. Exemplo: Quem tirou a carta diz “carro”. O próximo diz “carro casa”. O próximo diz “carro casa mesa”. Quem errar bebe.",
+            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito tal ação, bebem.",
             
             //6
             "Guarde esta carta e use-a quando quiser. Em qualquer momento do jogo, você pode colocar a mão na testa, discretamente, fazendo continência. O último que perceber e fizer continência, bebe.",
@@ -86,7 +87,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Escolha uma palavra que não pode ser dita. Quem falar bebe.",
             
             //9
-            "Escolha um tema, como por exemplo “marcas de carros”. Diga uma palavra do tema, o proximo jogador deve dizer outra palavra do tema e assim por diante. O jogo acaba quando alguém não souber uma nova palavra do tema.",
+            "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.",
             
             //10
             "Determine uma regra para todos obedecerem. Pode ser algo do tipo “está proíbido falar a palavra ‘beber’”, ou “antes de beber uma dose, a pessoa tem que rebolar”. Quem quebrar a regra, deve beber.",
@@ -101,10 +102,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Todos os jogadores bebem."
     ]
     
+//    MARK: - IBOutlet
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet weak var cardImg: UIImageView!
+    @IBOutlet weak var amazonMktView: UIView!
     
+//    MARK: - IBOutlet
     @IBAction func newCardAction(_ sender: Any) {
         var newCard = Int.random(in: 0 ..< vetCardsImgName.count)
         
@@ -125,23 +129,35 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         cardImg.image = UIImage(named: vetCardsImgName[newCard])
         titleText.text = vetTitleText[newCard]
         descriptionText.text = vetDescriptionText[newCard]
-        
-        if(newCard == 1) {
-            rateApp()
+    }
+    @IBAction func amazonMkt(_ sender: Any) {
+        let urlStr = "https://amzn.to/2KQPauf"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
         }
-        
     }
     
+//    MARK: - Life Cicle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
-        bannerView.rootViewController = self
-        
-        bannerView.load(GADRequest())
-        bannerView.delegate = self
+        if(defaults.bool(forKey: "Purchased")) {
+            amazonMktView.removeFromSuperview()
+        }
+        else {
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = ["bc9b21ec199465e69782ace1e97f5b79"]
+
+            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+            addBannerViewToView(bannerView)
+            bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
+            bannerView.rootViewController = self
+
+            bannerView.load(GADRequest())
+            bannerView.delegate = self
+        }
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {
@@ -180,40 +196,5 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-    }
-    
-    
-//    MARK: - ADS PROP
-    
-    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
-      print("adViewDidReceiveAd")
-    }
-
-    /// Tells the delegate an ad request failed.
-    func adView(_ bannerView: GADBannerView,
-        didFailToReceiveAdWithError error: GADRequestError) {
-      print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
-    }
-
-    /// Tells the delegate that a full-screen view will be presented in response
-    /// to the user clicking on an ad.
-    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
-      print("adViewWillPresentScreen")
-    }
-
-    /// Tells the delegate that the full-screen view will be dismissed.
-    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
-      print("adViewWillDismissScreen")
-    }
-
-    /// Tells the delegate that the full-screen view has been dismissed.
-    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
-      print("adViewDidDismissScreen")
-    }
-
-    /// Tells the delegate that a user click will open another app (such as
-    /// the App Store), backgrounding the current app.
-    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
-      print("adViewWillLeaveApplication")
     }
 }
