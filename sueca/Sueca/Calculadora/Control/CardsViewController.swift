@@ -23,6 +23,12 @@ class CardsViewController: UIViewController {
     }
     
     @IBAction func trucoMKT(_ sender: Any) {
-        UIApplication.shared.openURL(NSURL(string: "itms://itunes.apple.com/de/app/x-gift/id1486427751?mt=8&uo=4")! as URL)
+        let urlStr = "itms://itunes.apple.com/de/app/x-gift/id1486427751?mt=8&uo=4"
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
+            
+        } else {
+            UIApplication.shared.openURL(URL(string: urlStr)!)
+        }
     }
 }
