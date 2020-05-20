@@ -7,15 +7,20 @@
 //
 
 import UIKit
-
+import StoreKit
 class CardsViewController: UIViewController {
-    
-    @IBOutlet weak var label3: UILabel!
     
     @IBAction func close(_ sender: Any) {
         navigationController?.popViewController(animated: true)
 
         dismiss(animated: true, completion: nil)
+        rateApp()
+    }
+    
+    func rateApp() {
+        if #available(iOS 10.3, *) {
+            SKStoreReviewController.requestReview()
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

@@ -12,6 +12,7 @@ import GoogleMobileAds
 
 class ViewController: UIViewController, GADBannerViewDelegate {
     
+//    MARK: - Variables
     var bannerView: GADBannerView!
     
     var lastValue = 100
@@ -32,7 +33,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Saída",
             
             //5
-            "Stop",
+            "Eu nunca",
             
             //6
             "Continência",
@@ -44,7 +45,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Palavra não dita",
             
             //9
-            "Cafofo",
+            "C ou S",
             
             //10
             "Crie uma regra",
@@ -74,22 +75,22 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
             
             //5
-            "Escolha uma palavra qualquer, o próximo jogador deve repetir a palavra anterior e adicionar uma, e assim por diante. Exemplo: Quem tirou a carta diz “carro”. O próximo diz “carro casa”. O próximo diz “carro casa mesa”. Quem errar bebe.",
+            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem.",
             
             //6
-            "Guarde esta carta e use-a quando quiser. Em qualquer momento do jogo, você pode colocar a mão na testa, discretamente, fazendo continência. O último que perceber e fizer continência, bebe.",
+            "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe.",
             
             //7
-            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe. Ex.: 1, 2, PI, 4, 5, PI, 7, 8, PI, 10, 11, PI, PI, 14.",
+            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.",
             
             //8
             "Escolha uma palavra que não pode ser dita. Quem falar bebe.",
             
             //9
-            "Escolha um tema, como por exemplo “marcas de carros”. Diga uma palavra do tema, o proximo jogador deve dizer outra palavra do tema e assim por diante. O jogo acaba quando alguém não souber uma nova palavra do tema.",
+            "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.",
             
             //10
-            "Determine uma regra para todos obedecerem. Pode ser algo do tipo “está proíbido falar a palavra ‘beber’”, ou “antes de beber uma dose, a pessoa tem que rebolar”. Quem quebrar a regra, deve beber.",
+            "Determine uma regra para todos obedecerem. Exemplo: “Só pode beber com a mão esquerda”. Quem quebrar a regra, bebe.",
             
             //J
             "Todos os homens no jogo bebem.",
@@ -101,10 +102,12 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Todos os jogadores bebem."
     ]
     
+//    MARK: - IBOutlet
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet weak var cardImg: UIImageView!
     
+//    MARK: - IBAction
     @IBAction func newCardAction(_ sender: Any) {
         var newCard = Int.random(in: 0 ..< vetCardsImgName.count)
         
@@ -126,12 +129,14 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         titleText.text = vetTitleText[newCard]
         descriptionText.text = vetDescriptionText[newCard]
         
-        if(newCard == 1) {
-            rateApp()
-        }
-        
     }
     
+    @IBAction func showHome(_ sender: Any) {
+        showMenu()
+    }
+    
+    
+//    MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -144,6 +149,45 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         bannerView.delegate = self
     }
     
+//    MARK: - Functions
+    func showMenu() {
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let GoOrdemDasCartas = UIAlertAction(title: "Regras", style: .default, handler: { (action) -> Void in
+            self.performSegue(withIdentifier: "segueCards", sender: nil)
+        })
+        
+        let EditAction = UIAlertAction(title: "Drinks", style: .default, handler: { (action) -> Void in
+            self.performSegue(withIdentifier: "segueDrinks", sender: nil)
+        })
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
+        
+        optionMenu.addAction(GoOrdemDasCartas)
+        optionMenu.addAction(EditAction)
+        optionMenu.addAction(cancelAction)
+        
+        optionMenu.modalPresentationStyle = .popover
+        optionMenu.popoverPresentationController?.sourceView = self.view
+        optionMenu.popoverPresentationController?.sourceRect = CGRect(x: self.view.bounds.size.width / 2.0, y: self.view.bounds.size.height / 1.2, width: 1.0, height: 1.0)
+        
+        self.present(optionMenu, animated: true, completion: nil)
+    }
+    
+    func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            completion()
+        }
+    }
+    
+    //    MARK: - STYLE
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
+//    MARK: - ADS
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
@@ -164,26 +208,6 @@ class ViewController: UIViewController, GADBannerViewDelegate {
                                 constant: 0)
         ])
     }
-    
-    func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            completion()
-        }
-    }
-    
-    //    MARK: - RATE APP
-    func rateApp() {
-        if #available(iOS 10.3, *) {
-            SKStoreReviewController.requestReview()
-        }
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    
-//    MARK: - ADS PROP
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
       print("adViewDidReceiveAd")
