@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import StoreKit
 import GoogleMobileAds
 
 class ViewController: UIViewController, GADBannerViewDelegate {

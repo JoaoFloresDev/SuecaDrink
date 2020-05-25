@@ -14,7 +14,6 @@
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
 		3D6EA11A2238362800174399 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6EA1192238362800174399 /* Calculator.swift */; };
 		466FCA101DCD957CE21F78BE /* Pods_Sueca_Drink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9595FA7A1DA7FDE93A2628F /* Pods_Sueca_Drink.framework */; };
-		C422674A237212D5000A6DA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4226749237212D5000A6DA3 /* Default-568h@2x.png */; };
 		C464352C23C899CC0033024D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C464352E23C899CC0033024D /* Localizable.strings */; };
 		C4885CF4236CBADC004B1556 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF2236CBADC004B1556 /* CreditsViewController.swift */; };
 		C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF3236CBADC004B1556 /* CardsViewController.swift */; };
@@ -32,7 +31,6 @@
 		3D6EA1192238362800174399 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		77E7C4D4F5D4D61E95D9C764 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
 		B9595FA7A1DA7FDE93A2628F /* Pods_Sueca_Drink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sueca_Drink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4226749237212D5000A6DA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C464352623C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C464352723C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		C464352823C899990033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 		3D6EA0F92237EBE500174399 = {
 			isa = PBXGroup;
 			children = (
-				C4226749237212D5000A6DA3 /* Default-568h@2x.png */,
 				3D6EA1042237EBE500174399 /* Calculadora */,
 				3D6EA1032237EBE500174399 /* Products */,
 				7F38B1CF992CC29455A2A5C4 /* Pods */,
@@ -202,7 +199,6 @@
 			files = (
 				C464352C23C899CC0033024D /* Localizable.strings in Resources */,
 				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
-				C422674A237212D5000A6DA3 /* Default-568h@2x.png in Resources */,
 				3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */,
 				3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */,
 			);
@@ -431,7 +427,7 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,7 +449,7 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
