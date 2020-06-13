@@ -146,256 +146,306 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2770"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hA" translatesAutoresizingMaskIntoConstraints="NO" id="qUa-g0-Q8i">
-                                                <rect key="frame" x="10" y="10" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="85" width="60" height="170"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="0hD-cb-zPK"/>
                                                     <constraint firstAttribute="height" constant="170" id="4ND-Zr-kyR"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-Wt-5oy">
-                                                <rect key="frame" x="10" y="190" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="265" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h3" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-Qd-20L">
-                                                <rect key="frame" x="10" y="370" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="445" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h4" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-YO-O0Y">
-                                                <rect key="frame" x="10" y="550" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="625" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h5" translatesAutoresizingMaskIntoConstraints="NO" id="A5U-Dd-tdr">
-                                                <rect key="frame" x="10" y="730" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="805" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h6" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-ML-J5H">
-                                                <rect key="frame" x="10" y="910" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="985" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h7" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-6n-TtS">
-                                                <rect key="frame" x="10" y="1090" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1165" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h8" translatesAutoresizingMaskIntoConstraints="NO" id="llf-Lt-yAK">
-                                                <rect key="frame" x="10" y="1270" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1345" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h9" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-oT-Yoo">
-                                                <rect key="frame" x="10" y="1450" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1525" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h10" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-yn-uvz">
-                                                <rect key="frame" x="10" y="1630" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1705" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hJ" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-dw-gbI">
-                                                <rect key="frame" x="10" y="1810" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1885" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hQ" translatesAutoresizingMaskIntoConstraints="NO" id="ruA-ot-YAN">
-                                                <rect key="frame" x="10" y="1990" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="2065" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hK" translatesAutoresizingMaskIntoConstraints="NO" id="OBu-MJ-FTQ">
-                                                <rect key="frame" x="10" y="2170" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="2245" width="60" height="170"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards projected by brgfx / Freepik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juw-GA-pCS">
-                                                <rect key="frame" x="89.5" y="2650" width="235" height="19"/>
+                                                <rect key="frame" x="89.5" y="2725" width="235" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All icons made by Freepik from www.flaticon.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g1-ia-c5z">
-                                                <rect key="frame" x="37" y="2689" width="340" height="19"/>
+                                                <rect key="frame" x="37" y="2764" width="340" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos made by Freepik from www.freepik.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-Qd-xir">
-                                                <rect key="frame" x="44" y="2728" width="326" height="19"/>
+                                                <rect key="frame" x="44" y="2803" width="326" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um jogador para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV0-65-N1f">
-                                                <rect key="frame" x="80" y="27" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="102" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um bebe." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTw-Ej-euB">
-                                                <rect key="frame" x="80" y="10" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="85" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha dois jogadores para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-84-7VZ">
-                                                <rect key="frame" x="80" y="207" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="282" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dois bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-HL-NVC">
-                                                <rect key="frame" x="80" y="190" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="265" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha três jogadores para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-qX-hI5">
-                                                <rect key="frame" x="80" y="387" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="462" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Três bebem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-Jf-YIO">
-                                                <rect key="frame" x="80" y="370" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="445" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a8-ze-dNF">
-                                                <rect key="frame" x="80" y="567" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="642" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-sB-vZt">
-                                                <rect key="frame" x="80" y="550" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="625" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RX-N7-lOZ">
-                                                <rect key="frame" x="80" y="747" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="822" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eu nunca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-4d-NBS">
-                                                <rect key="frame" x="80" y="730" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="805" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSA-Mb-e3u">
-                                                <rect key="frame" x="80" y="927" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1002" width="324" height="153"/>
                                                 <string key="text">Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continência" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCI-OQ-xRi">
-                                                <rect key="frame" x="80" y="910" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="985" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-IR-yzt">
-                                                <rect key="frame" x="80" y="1107" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1182" width="324" height="153"/>
                                                 <string key="text">Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMA-Yk-UhO">
-                                                <rect key="frame" x="80" y="1090" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1165" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha uma palavra que não pode ser dita. Quem falar bebe." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQl-8O-Uxv">
-                                                <rect key="frame" x="80" y="1287" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1362" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra não dita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-cl-F1t">
-                                                <rect key="frame" x="80" y="1270" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1345" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZV-Mn-UiT">
-                                                <rect key="frame" x="80" y="1467" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1542" width="324" height="153"/>
                                                 <string key="text">São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C ou S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3a-f4-W2V">
-                                                <rect key="frame" x="80" y="1450" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1525" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determine uma regra para todos obedecerem. Exemplo: “Só pode beber com a mão esquerda”. Quem quebrar a regra, bebe." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXS-l5-fzW">
-                                                <rect key="frame" x="80" y="1664" width="324" height="136"/>
+                                                <rect key="frame" x="80" y="1739" width="324" height="136"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie uma regra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qa-bI-bQT">
-                                                <rect key="frame" x="80" y="1630" width="324" height="34"/>
+                                                <rect key="frame" x="80" y="1705" width="324" height="34"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos os homens no jogo bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-6M-J9R">
-                                                <rect key="frame" x="80" y="1827" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1902" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homens bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yV-ht-GdV">
-                                                <rect key="frame" x="80" y="1810" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1885" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todas as mulheres no jogo bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-dD-a2s">
-                                                <rect key="frame" x="80" y="2007" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="2082" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mulheres bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqN-RR-WzZ">
-                                                <rect key="frame" x="80" y="1990" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="2065" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos os jogadores bebem" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-aR-lWz">
-                                                <rect key="frame" x="80" y="2187" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="2262" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos bebem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ri-KL-FLh">
-                                                <rect key="frame" x="80" y="2170" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="2245" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules icon by Kiranshastry from freepik.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-tG-ZoK">
-                                                <rect key="frame" x="50" y="2611" width="314" height="19"/>
+                                                <rect key="frame" x="50" y="2686" width="314" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconTruco" translatesAutoresizingMaskIntoConstraints="NO" id="gfI-Py-kkq">
-                                                <rect key="frame" x="143" y="2414.5" width="128" height="128"/>
+                                                <rect key="frame" x="143" y="2489.5" width="128" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="GHq-UG-jKc"/>
                                                     <constraint firstAttribute="width" secondItem="gfI-Py-kkq" secondAttribute="height" multiplier="1:1" id="VPU-WA-HgY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baixe também:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o9-kU-2c0">
-                                                <rect key="frame" x="151" y="2380" width="112" height="24.5"/>
+                                                <rect key="frame" x="151" y="2455" width="112" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-OY-Pmx">
-                                                <rect key="frame" x="143" y="2414.5" width="128" height="128"/>
+                                                <rect key="frame" x="143" y="2489.5" width="128" height="128"/>
                                                 <connections>
                                                     <action selector="trucoMKT:" destination="5Fn-jG-omz" eventType="touchUpInside" id="E5C-fu-U2r"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truco Marcador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-9n-U75">
-                                                <rect key="frame" x="0.0" y="2542.5" width="414" height="28.5"/>
+                                                <rect key="frame" x="0.0" y="2617.5" width="414" height="28.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BxX-QA-Hbi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comprar Versão Pro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szF-0e-zoC">
+                                                        <rect key="frame" x="10" y="0.0" width="177" height="30"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcu-Si-tCc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="szF-0e-zoC" firstAttribute="leading" secondItem="BxX-QA-Hbi" secondAttribute="leading" constant="10" id="7Xj-pl-Rpg"/>
+                                                    <constraint firstItem="kcu-Si-tCc" firstAttribute="centerX" secondItem="BxX-QA-Hbi" secondAttribute="centerX" id="84k-w8-Edu"/>
+                                                    <constraint firstItem="kcu-Si-tCc" firstAttribute="centerY" secondItem="BxX-QA-Hbi" secondAttribute="centerY" id="JPI-7M-Vfp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="szF-0e-zoC" secondAttribute="bottom" id="PDj-Uh-74z"/>
+                                                    <constraint firstAttribute="height" constant="30" id="PhH-js-YYm"/>
+                                                    <constraint firstItem="kcu-Si-tCc" firstAttribute="width" secondItem="BxX-QA-Hbi" secondAttribute="width" id="ee3-qd-PXG"/>
+                                                    <constraint firstItem="szF-0e-zoC" firstAttribute="top" secondItem="BxX-QA-Hbi" secondAttribute="top" id="fUT-Yd-qXL"/>
+                                                    <constraint firstItem="kcu-Si-tCc" firstAttribute="height" secondItem="BxX-QA-Hbi" secondAttribute="height" id="jst-x3-xiZ"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBf-fo-Tqg">
+                                                <rect key="frame" x="0.0" y="35" width="414" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar Compra" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWP-TT-NH3">
+                                                        <rect key="frame" x="10" y="0.0" width="165.5" height="30"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tZ-o9-N3o">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="6tZ-o9-N3o" firstAttribute="centerX" secondItem="aBf-fo-Tqg" secondAttribute="centerX" id="5zt-mg-m6t"/>
+                                                    <constraint firstItem="pWP-TT-NH3" firstAttribute="top" secondItem="aBf-fo-Tqg" secondAttribute="top" id="8bP-Ul-U5R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pWP-TT-NH3" secondAttribute="bottom" id="CzE-Tv-fJ7"/>
+                                                    <constraint firstAttribute="height" constant="30" id="HcH-vy-Q7l"/>
+                                                    <constraint firstItem="6tZ-o9-N3o" firstAttribute="width" secondItem="aBf-fo-Tqg" secondAttribute="width" id="RPq-eI-BfL"/>
+                                                    <constraint firstItem="pWP-TT-NH3" firstAttribute="leading" secondItem="aBf-fo-Tqg" secondAttribute="leading" constant="10" id="VAl-i2-ud2"/>
+                                                    <constraint firstItem="6tZ-o9-N3o" firstAttribute="height" secondItem="aBf-fo-Tqg" secondAttribute="height" id="YK5-Fo-k8c"/>
+                                                    <constraint firstItem="6tZ-o9-N3o" firstAttribute="centerY" secondItem="aBf-fo-Tqg" secondAttribute="centerY" id="x25-Wl-up9"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" red="0.33756980299949646" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -404,6 +454,7 @@
                                             <constraint firstItem="aQl-8O-Uxv" firstAttribute="height" secondItem="llf-Lt-yAK" secondAttribute="height" multiplier="0.9" id="0bA-55-8cI"/>
                                             <constraint firstAttribute="trailing" secondItem="9a8-ze-dNF" secondAttribute="trailing" constant="10" id="11z-w8-7hB"/>
                                             <constraint firstItem="gfI-Py-kkq" firstAttribute="top" secondItem="7o9-kU-2c0" secondAttribute="bottom" constant="10" id="1MO-1N-y6w"/>
+                                            <constraint firstItem="aBf-fo-Tqg" firstAttribute="leading" secondItem="azL-vK-pvo" secondAttribute="leading" id="1Zg-OT-znE"/>
                                             <constraint firstItem="6KQ-HL-NVC" firstAttribute="leading" secondItem="dIM-Wt-5oy" secondAttribute="trailing" constant="10" id="1eS-Iq-J5u"/>
                                             <constraint firstAttribute="trailing" secondItem="9ri-KL-FLh" secondAttribute="trailing" constant="10" id="2LM-Lm-1HS"/>
                                             <constraint firstAttribute="trailing" secondItem="8RX-N7-lOZ" secondAttribute="trailing" constant="10" id="2fk-Zf-y7O"/>
@@ -437,23 +488,25 @@
                                             <constraint firstItem="Dfd-dw-gbI" firstAttribute="top" secondItem="pZE-yn-uvz" secondAttribute="bottom" constant="10" id="Ege-0u-TbF"/>
                                             <constraint firstItem="d3a-f4-W2V" firstAttribute="height" secondItem="Y5o-oT-Yoo" secondAttribute="height" multiplier="0.1" id="FuD-Co-HJ2"/>
                                             <constraint firstItem="2g1-ia-c5z" firstAttribute="top" secondItem="juw-GA-pCS" secondAttribute="bottom" constant="20" id="GVi-6Q-Ls2"/>
+                                            <constraint firstAttribute="trailing" secondItem="aBf-fo-Tqg" secondAttribute="trailing" id="Ge4-D8-8bF"/>
                                             <constraint firstItem="ruA-ot-YAN" firstAttribute="height" secondItem="qUa-g0-Q8i" secondAttribute="height" id="HXh-1b-XsF"/>
                                             <constraint firstItem="llf-Lt-yAK" firstAttribute="width" secondItem="qUa-g0-Q8i" secondAttribute="width" id="IJq-c6-Xhr"/>
                                             <constraint firstAttribute="trailing" secondItem="3yV-ht-GdV" secondAttribute="trailing" constant="10" id="J4M-Ah-GRq"/>
                                             <constraint firstItem="aSA-Mb-e3u" firstAttribute="top" secondItem="rCI-OQ-xRi" secondAttribute="bottom" id="JHy-Th-hR8"/>
                                             <constraint firstItem="UMA-Yk-UhO" firstAttribute="height" secondItem="IqD-6n-TtS" secondAttribute="height" multiplier="0.1" id="JIm-pf-pHe"/>
+                                            <constraint firstItem="BxX-QA-Hbi" firstAttribute="top" secondItem="azL-vK-pvo" secondAttribute="top" id="K7U-JD-6Ru"/>
                                             <constraint firstItem="gfI-Py-kkq" firstAttribute="centerX" secondItem="azL-vK-pvo" secondAttribute="centerX" id="KKi-rw-ka1"/>
                                             <constraint firstAttribute="trailing" secondItem="Vmb-dD-a2s" secondAttribute="trailing" constant="10" id="Ka1-x6-xrB"/>
                                             <constraint firstItem="aSA-Mb-e3u" firstAttribute="leading" secondItem="ffb-ML-J5H" secondAttribute="trailing" constant="10" id="L0M-a4-uds"/>
                                             <constraint firstItem="iV0-65-N1f" firstAttribute="top" secondItem="BTw-Ej-euB" secondAttribute="bottom" id="Lt9-Ky-KMO"/>
                                             <constraint firstItem="hY2-qX-hI5" firstAttribute="height" secondItem="cWH-Qd-20L" secondAttribute="height" multiplier="0.9" id="M4K-dR-KoE"/>
-                                            <constraint firstItem="qUa-g0-Q8i" firstAttribute="top" secondItem="azL-vK-pvo" secondAttribute="top" constant="10" id="MCb-h1-Cqk"/>
                                             <constraint firstItem="d3a-f4-W2V" firstAttribute="leading" secondItem="Y5o-oT-Yoo" secondAttribute="trailing" constant="10" id="MTx-2n-IMl"/>
                                             <constraint firstItem="cWH-Qd-20L" firstAttribute="top" secondItem="dIM-Wt-5oy" secondAttribute="bottom" constant="10" id="MdS-3o-F4V"/>
                                             <constraint firstItem="0ZV-Mn-UiT" firstAttribute="top" secondItem="d3a-f4-W2V" secondAttribute="bottom" id="N3x-Jk-ieQ"/>
                                             <constraint firstAttribute="trailing" secondItem="0ZV-Mn-UiT" secondAttribute="trailing" constant="10" id="Na9-c6-Pck"/>
                                             <constraint firstItem="ruA-ot-YAN" firstAttribute="leading" secondItem="azL-vK-pvo" secondAttribute="leading" constant="10" id="Nau-fh-6JZ"/>
                                             <constraint firstItem="iV0-65-N1f" firstAttribute="leading" secondItem="qUa-g0-Q8i" secondAttribute="trailing" constant="10" id="NpT-5X-I1i"/>
+                                            <constraint firstAttribute="trailing" secondItem="BxX-QA-Hbi" secondAttribute="trailing" id="OMt-bH-yBs"/>
                                             <constraint firstItem="Ayc-YO-O0Y" firstAttribute="top" secondItem="cWH-Qd-20L" secondAttribute="bottom" constant="10" id="OW6-kc-E55"/>
                                             <constraint firstAttribute="trailing" secondItem="2ZW-9n-U75" secondAttribute="trailing" id="P1P-bN-EPN"/>
                                             <constraint firstAttribute="trailing" secondItem="vmf-6M-J9R" secondAttribute="trailing" constant="10" id="PCn-gd-EoS"/>
@@ -482,6 +535,7 @@
                                             <constraint firstItem="8RX-N7-lOZ" firstAttribute="top" secondItem="gaS-4d-NBS" secondAttribute="bottom" id="Wkn-M1-GV6"/>
                                             <constraint firstItem="uVB-OY-Pmx" firstAttribute="centerX" secondItem="gfI-Py-kkq" secondAttribute="centerX" id="XXw-3H-yqj"/>
                                             <constraint firstItem="jTF-sB-vZt" firstAttribute="height" secondItem="Ayc-YO-O0Y" secondAttribute="height" multiplier="0.1" id="Y5N-gQ-zEX"/>
+                                            <constraint firstItem="BxX-QA-Hbi" firstAttribute="leading" secondItem="azL-vK-pvo" secondAttribute="leading" id="YTx-Zl-UkV"/>
                                             <constraint firstItem="cXS-l5-fzW" firstAttribute="top" secondItem="0Qa-bI-bQT" secondAttribute="bottom" id="YYQ-Vk-Upq"/>
                                             <constraint firstItem="6KQ-HL-NVC" firstAttribute="height" secondItem="dIM-Wt-5oy" secondAttribute="height" multiplier="0.1" id="Yrv-EL-oOb"/>
                                             <constraint firstItem="0Qa-bI-bQT" firstAttribute="height" secondItem="pZE-yn-uvz" secondAttribute="height" multiplier="0.2" id="ZBf-T1-WUX"/>
@@ -493,9 +547,11 @@
                                             <constraint firstItem="3yV-ht-GdV" firstAttribute="leading" secondItem="Dfd-dw-gbI" secondAttribute="trailing" constant="10" id="aNn-KA-YZ4"/>
                                             <constraint firstItem="wjM-cl-F1t" firstAttribute="top" secondItem="vtL-IR-yzt" secondAttribute="bottom" constant="10" id="aO0-d4-JIK"/>
                                             <constraint firstItem="VOO-Jf-YIO" firstAttribute="leading" secondItem="cWH-Qd-20L" secondAttribute="trailing" constant="10" id="aPf-eZ-N5r"/>
+                                            <constraint firstItem="aBf-fo-Tqg" firstAttribute="top" secondItem="BxX-QA-Hbi" secondAttribute="bottom" constant="5" id="aQd-GA-19h"/>
                                             <constraint firstItem="aSA-Mb-e3u" firstAttribute="height" secondItem="ffb-ML-J5H" secondAttribute="height" multiplier="0.9" id="abw-82-yV3"/>
                                             <constraint firstItem="cWH-Qd-20L" firstAttribute="height" secondItem="qUa-g0-Q8i" secondAttribute="height" id="agl-hd-3CS"/>
                                             <constraint firstItem="A5U-Dd-tdr" firstAttribute="top" secondItem="Ayc-YO-O0Y" secondAttribute="bottom" constant="10" id="aog-a9-fk0"/>
+                                            <constraint firstItem="qUa-g0-Q8i" firstAttribute="top" secondItem="aBf-fo-Tqg" secondAttribute="bottom" constant="20" id="b2D-hk-rgg"/>
                                             <constraint firstItem="IqD-6n-TtS" firstAttribute="leading" secondItem="azL-vK-pvo" secondAttribute="leading" constant="10" id="bD3-X2-WsL"/>
                                             <constraint firstItem="vtL-IR-yzt" firstAttribute="top" secondItem="UMA-Yk-UhO" secondAttribute="bottom" id="bZ1-SF-rR6"/>
                                             <constraint firstAttribute="trailing" secondItem="hSw-aR-lWz" secondAttribute="trailing" constant="10" id="bbY-52-Rx7"/>
@@ -503,7 +559,6 @@
                                             <constraint firstItem="pZE-yn-uvz" firstAttribute="height" secondItem="qUa-g0-Q8i" secondAttribute="height" id="cfx-w2-jRN"/>
                                             <constraint firstItem="9a8-ze-dNF" firstAttribute="leading" secondItem="Ayc-YO-O0Y" secondAttribute="trailing" constant="10" id="d8W-0f-YXT"/>
                                             <constraint firstItem="aSA-Mb-e3u" firstAttribute="top" secondItem="rCI-OQ-xRi" secondAttribute="bottom" id="dDJ-sp-xUE"/>
-                                            <constraint firstItem="BTw-Ej-euB" firstAttribute="top" secondItem="azL-vK-pvo" secondAttribute="top" constant="10" id="dDy-Ju-Tqp"/>
                                             <constraint firstItem="rCI-OQ-xRi" firstAttribute="height" secondItem="ffb-ML-J5H" secondAttribute="height" multiplier="0.1" id="dGj-YQ-1ol"/>
                                             <constraint firstAttribute="trailing" secondItem="rCI-OQ-xRi" secondAttribute="trailing" constant="10" id="dQ2-eZ-wDg"/>
                                             <constraint firstItem="jTF-sB-vZt" firstAttribute="top" secondItem="hY2-qX-hI5" secondAttribute="bottom" constant="10" id="dhq-J1-gbf"/>
@@ -527,6 +582,7 @@
                                             <constraint firstItem="0ZV-Mn-UiT" firstAttribute="height" secondItem="Y5o-oT-Yoo" secondAttribute="height" multiplier="0.9" id="inZ-W0-Wyv"/>
                                             <constraint firstItem="vtL-IR-yzt" firstAttribute="leading" secondItem="IqD-6n-TtS" secondAttribute="trailing" constant="10" id="jBR-Xm-DAB"/>
                                             <constraint firstItem="ffb-ML-J5H" firstAttribute="top" secondItem="A5U-Dd-tdr" secondAttribute="bottom" constant="10" id="jIy-d2-F2W"/>
+                                            <constraint firstItem="BTw-Ej-euB" firstAttribute="top" secondItem="qUa-g0-Q8i" secondAttribute="top" id="jjT-ox-9xF"/>
                                             <constraint firstItem="uVB-OY-Pmx" firstAttribute="height" secondItem="gfI-Py-kkq" secondAttribute="height" id="jw1-R4-smO"/>
                                             <constraint firstItem="fqN-RR-WzZ" firstAttribute="leading" secondItem="ruA-ot-YAN" secondAttribute="trailing" constant="10" id="jyQ-1G-kGR"/>
                                             <constraint firstItem="vmf-6M-J9R" firstAttribute="height" secondItem="Dfd-dw-gbI" secondAttribute="height" multiplier="0.9" id="kf1-TA-IlF"/>
@@ -636,7 +692,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="key-P2-bYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="1339"/>
+            <point key="canvasLocation" x="905.79710144927549" y="1338.6160714285713"/>
         </scene>
         <!--Cadastro Organização-->
         <scene sceneID="2wy-BV-h8p">
