@@ -106,7 +106,9 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet weak var cardImg: UIImageView!
     
-//    MARK: - IBAction
+    @IBOutlet weak var mktPlaceholder: UIImageView!
+    @IBOutlet weak var viewDescription: UIView!
+    //    MARK: - IBAction
     @IBAction func newCardAction(_ sender: Any) {
         var newCard = Int.random(in: 0 ..< vetCardsImgName.count)
         
@@ -138,18 +140,41 @@ class ViewController: UIViewController, GADBannerViewDelegate {
 //    MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
-        bannerView.rootViewController = self
-        
-        bannerView.load(GADRequest())
-        bannerView.delegate = self
-        
-        print("- Dinheiro ---------------------")
-        print(RazeFaceProducts.store.isProductPurchased("NoAdds"))
-        print("----------------------")
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if(RazeFaceProducts.store.isProductPurchased("NoAdds") || (UserDefaults.standard.object(forKey: "NoAdds") != nil)) {
+            print("Pro!")
+            if let placeHolder = mktPlaceholder {
+                placeHolder.removeFromSuperview()
+            }
+
+            if let banner = bannerView {
+                banner.removeFromSuperview()
+            }
+            
+            for constraints in descriptionText.constraints {
+                if(constraints.identifier == "100") {
+                    constraints.constant = constraints.constant - 50
+                }
+            }
+            
+            for constraints in viewDescription.constraints {
+                if(constraints.identifier == "100") {
+                    
+                    constraints.constant = constraints.constant - 50
+                }
+            }
+        } else {
+            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+            addBannerViewToView(bannerView)
+            bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
+            bannerView.rootViewController = self
+            
+            bannerView.load(GADRequest())
+            bannerView.delegate = self
+        }
     }
     
 //    MARK: - Functions

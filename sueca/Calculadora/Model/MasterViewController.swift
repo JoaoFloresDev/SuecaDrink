@@ -69,7 +69,8 @@ class MasterViewController: UITableViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         if RazeFaceProducts.store.isProductPurchased("NoAdds") {
-            print("Comprado aeee")
+            print("Comprado")
+            UserDefaults.standard.set("Purshed", forKey:"NoAdds")
         }
     }
   

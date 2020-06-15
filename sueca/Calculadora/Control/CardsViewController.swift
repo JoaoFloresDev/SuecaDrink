@@ -27,13 +27,10 @@ class CardsViewController: UIViewController {
         return .lightContent
     }
     
-    @IBAction func trucoMKT(_ sender: Any) {
-        let urlStr = "itms://itunes.apple.com/de/app/x-gift/id1486427751?mt=8&uo=4"
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(URL(string: urlStr)!, options: [:], completionHandler: nil)
-            
-        } else {
-            UIApplication.shared.openURL(URL(string: urlStr)!)
-        }
+    @IBOutlet weak var buttonUpgrade: UIView!
+    
+    override func viewDidLoad() {
+        buttonUpgrade.layer.cornerRadius = 10
+        buttonUpgrade.clipsToBounds = true
     }
 }
