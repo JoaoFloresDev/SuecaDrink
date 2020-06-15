@@ -31,51 +31,27 @@ import StoreKit
 
 class MasterViewController: UITableViewController {
   
+    
+    @IBOutlet weak var loadingShow: UIActivityIndicatorView!
     @IBAction func dismissView(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-    let showDetailSegueIdentifier = "showDetail"
   
   var products: [SKProduct] = []
-  
-  override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-    if identifier == showDetailSegueIdentifier {
-      guard let indexPath = tableView.indexPathForSelectedRow else {
-        return false
-      }
-      
-      let product = products[(indexPath as NSIndexPath).row]
-      
-      return RazeFaceProducts.store.isProductPurchased(product.productIdentifier)
-    }
     
-    return true
-  }
-
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == showDetailSegueIdentifier {
-      guard let indexPath = tableView.indexPathForSelectedRow else { return }
-      
-      let product = products[(indexPath as NSIndexPath).row]
-      
-      if let name = resourceNameForProductIdentifier(product.productIdentifier),
-             let detailViewController = segue.destination as? DetailViewController {
-        let image = UIImage(named: name)
-        detailViewController.image = image
-      }
+    override func viewWillAppear(_ animated: Bool) {
+        loadingShow.startAnimating()
+        loadingShow.alpha = 1
     }
-  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     title = "Produtos"
     
     refreshControl = UIRefreshControl()
     refreshControl?.addTarget(self, action: #selector(MasterViewController.reload), for: .valueChanged)
     
-    let restoreButton = UIBarButtonItem(title: "Restore",
+    let restoreButton = UIBarButtonItem(title: "Restaurar",
                                         style: .plain,
                                         target: self,
                                         action: #selector(MasterViewController.restoreTapped(_:)))
@@ -88,9 +64,14 @@ class MasterViewController: UITableViewController {
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-
     reload()
   }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        if RazeFaceProducts.store.isProductPurchased("NoAdds") {
+            print("Comprado aeee")
+        }
+    }
   
   @objc func reload() {
     products = []
@@ -104,7 +85,9 @@ class MasterViewController: UITableViewController {
         
         self.tableView.reloadData()
       }
-      
+        
+      self.tableView.reloadData()
+        
       self.refreshControl?.endRefreshing()
     }
   }
@@ -130,6 +113,11 @@ class MasterViewController: UITableViewController {
 extension MasterViewController {
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    if(products.count > 0) {
+        loadingShow.stopAnimating()
+        loadingShow.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        loadingShow.alpha = 0
+    }
     return products.count
   }
 
@@ -143,8 +131,12 @@ extension MasterViewController {
       RazeFaceProducts.store.buyProduct(product)
     }
     
+    if(loadingShow.alpha > 0) {
+        loadingShow.stopAnimating()
+        loadingShow.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+        loadingShow.alpha = 0
+    }
+    
     return cell
   }
-    
-    
 }

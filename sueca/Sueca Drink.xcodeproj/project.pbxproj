@@ -19,6 +19,7 @@
 		C44DFC762496E48300971E0D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC712496E48200971E0D /* ProductCell.swift */; };
 		C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC722496E48200971E0D /* RazeFaceProducts.swift */; };
 		C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC732496E48300971E0D /* DetailViewController.swift */; };
+		C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44DFC792496EF9800971E0D /* StoreKit.framework */; };
 		C464352C23C899CC0033024D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C464352E23C899CC0033024D /* Localizable.strings */; };
 		C4885CF4236CBADC004B1556 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF2236CBADC004B1556 /* DrinksViewController.swift */; };
 		C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF3236CBADC004B1556 /* CardsViewController.swift */; };
@@ -41,6 +42,7 @@
 		C44DFC712496E48200971E0D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C44DFC722496E48200971E0D /* RazeFaceProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazeFaceProducts.swift; sourceTree = "<group>"; };
 		C44DFC732496E48300971E0D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C44DFC792496EF9800971E0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C464352623C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		C464352723C899880033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		C464352823C899990033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529DD461062CEEA54F3FBEE3 /* Pods_Sueca_Drink.framework in Frameworks */,
+				C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +146,7 @@
 		CC287A9F7C8A302DEE07606F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C44DFC792496EF9800971E0D /* StoreKit.framework */,
 				6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */,
 			);
 			name = Frameworks;

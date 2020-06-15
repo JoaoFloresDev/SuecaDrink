@@ -129,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcu-3b-QPh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+            <point key="canvasLocation" x="155" y="198"/>
         </scene>
         <!--Cadastro Organização-->
         <scene sceneID="CAY-u9-15A">
@@ -146,252 +146,252 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2770"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hA" translatesAutoresizingMaskIntoConstraints="NO" id="qUa-g0-Q8i">
-                                                <rect key="frame" x="10" y="50" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="60" width="60" height="170"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="0hD-cb-zPK"/>
                                                     <constraint firstAttribute="height" constant="170" id="4ND-Zr-kyR"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h2" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-Wt-5oy">
-                                                <rect key="frame" x="10" y="230" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="240" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h3" translatesAutoresizingMaskIntoConstraints="NO" id="cWH-Qd-20L">
-                                                <rect key="frame" x="10" y="410" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="420" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h4" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-YO-O0Y">
-                                                <rect key="frame" x="10" y="590" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="600" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h5" translatesAutoresizingMaskIntoConstraints="NO" id="A5U-Dd-tdr">
-                                                <rect key="frame" x="10" y="770" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="780" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h6" translatesAutoresizingMaskIntoConstraints="NO" id="ffb-ML-J5H">
-                                                <rect key="frame" x="10" y="950" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="960" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h7" translatesAutoresizingMaskIntoConstraints="NO" id="IqD-6n-TtS">
-                                                <rect key="frame" x="10" y="1130" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1140" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h8" translatesAutoresizingMaskIntoConstraints="NO" id="llf-Lt-yAK">
-                                                <rect key="frame" x="10" y="1310" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1320" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h9" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-oT-Yoo">
-                                                <rect key="frame" x="10" y="1490" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1500" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="h10" translatesAutoresizingMaskIntoConstraints="NO" id="pZE-yn-uvz">
-                                                <rect key="frame" x="10" y="1670" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1680" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hJ" translatesAutoresizingMaskIntoConstraints="NO" id="Dfd-dw-gbI">
-                                                <rect key="frame" x="10" y="1850" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="1860" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hQ" translatesAutoresizingMaskIntoConstraints="NO" id="ruA-ot-YAN">
-                                                <rect key="frame" x="10" y="2030" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="2040" width="60" height="170"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hK" translatesAutoresizingMaskIntoConstraints="NO" id="OBu-MJ-FTQ">
-                                                <rect key="frame" x="10" y="2210" width="60" height="170"/>
+                                                <rect key="frame" x="10" y="2220" width="60" height="170"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards projected by brgfx / Freepik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juw-GA-pCS">
-                                                <rect key="frame" x="89.5" y="2690" width="235" height="19"/>
+                                                <rect key="frame" x="89.5" y="2700" width="235" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All icons made by Freepik from www.flaticon.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g1-ia-c5z">
-                                                <rect key="frame" x="37" y="2729" width="340" height="19"/>
+                                                <rect key="frame" x="37" y="2739" width="340" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos made by Freepik from www.freepik.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbI-Qd-xir">
-                                                <rect key="frame" x="44" y="2768" width="326" height="19"/>
+                                                <rect key="frame" x="44" y="2778" width="326" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha um jogador para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV0-65-N1f">
-                                                <rect key="frame" x="80" y="67" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="77" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Um bebe." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTw-Ej-euB">
-                                                <rect key="frame" x="80" y="50" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="60" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha dois jogadores para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeA-84-7VZ">
-                                                <rect key="frame" x="80" y="247" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="257" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dois bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-HL-NVC">
-                                                <rect key="frame" x="80" y="230" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="240" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha três jogadores para beber." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-qX-hI5">
-                                                <rect key="frame" x="80" y="427" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="437" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Três bebem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOO-Jf-YIO">
-                                                <rect key="frame" x="80" y="410" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="420" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9a8-ze-dNF">
-                                                <rect key="frame" x="80" y="607" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="617" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saída" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTF-sB-vZt">
-                                                <rect key="frame" x="80" y="590" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="600" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RX-N7-lOZ">
-                                                <rect key="frame" x="80" y="787" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="797" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eu nunca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-4d-NBS">
-                                                <rect key="frame" x="80" y="770" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="780" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSA-Mb-e3u">
-                                                <rect key="frame" x="80" y="967" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="977" width="324" height="153"/>
                                                 <string key="text">Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continência" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCI-OQ-xRi">
-                                                <rect key="frame" x="80" y="950" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="960" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-IR-yzt">
-                                                <rect key="frame" x="80" y="1147" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1157" width="324" height="153"/>
                                                 <string key="text">Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMA-Yk-UhO">
-                                                <rect key="frame" x="80" y="1130" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1140" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha uma palavra que não pode ser dita. Quem falar bebe." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQl-8O-Uxv">
-                                                <rect key="frame" x="80" y="1327" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1337" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palavra não dita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjM-cl-F1t">
-                                                <rect key="frame" x="80" y="1310" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1320" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZV-Mn-UiT">
-                                                <rect key="frame" x="80" y="1507" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1517" width="324" height="153"/>
                                                 <string key="text">São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.</string>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C ou S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3a-f4-W2V">
-                                                <rect key="frame" x="80" y="1490" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1500" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Determine uma regra para todos obedecerem. Exemplo: “Só pode beber com a mão esquerda”. Quem quebrar a regra, bebe." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXS-l5-fzW">
-                                                <rect key="frame" x="80" y="1704" width="324" height="136"/>
+                                                <rect key="frame" x="80" y="1714" width="324" height="136"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie uma regra." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qa-bI-bQT">
-                                                <rect key="frame" x="80" y="1670" width="324" height="34"/>
+                                                <rect key="frame" x="80" y="1680" width="324" height="34"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos os homens no jogo bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-6M-J9R">
-                                                <rect key="frame" x="80" y="1867" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="1877" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homens bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yV-ht-GdV">
-                                                <rect key="frame" x="80" y="1850" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="1860" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todas as mulheres no jogo bebem." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-dD-a2s">
-                                                <rect key="frame" x="80" y="2047" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="2057" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mulheres bebem." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqN-RR-WzZ">
-                                                <rect key="frame" x="80" y="2030" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="2040" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos os jogadores bebem" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-aR-lWz">
-                                                <rect key="frame" x="80" y="2227" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="2237" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos bebem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ri-KL-FLh">
-                                                <rect key="frame" x="80" y="2210" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="2220" width="324" height="17"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules icon by Kiranshastry from freepik.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-tG-ZoK">
-                                                <rect key="frame" x="50" y="2651" width="314" height="19"/>
+                                                <rect key="frame" x="50" y="2661" width="314" height="19"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconTruco" translatesAutoresizingMaskIntoConstraints="NO" id="gfI-Py-kkq">
-                                                <rect key="frame" x="143" y="2454.5" width="128" height="128"/>
+                                                <rect key="frame" x="143" y="2464.5" width="128" height="128"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="GHq-UG-jKc"/>
                                                     <constraint firstAttribute="width" secondItem="gfI-Py-kkq" secondAttribute="height" multiplier="1:1" id="VPU-WA-HgY"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baixe também:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o9-kU-2c0">
-                                                <rect key="frame" x="151" y="2420" width="112" height="24.5"/>
+                                                <rect key="frame" x="151" y="2430" width="112" height="24.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVB-OY-Pmx">
-                                                <rect key="frame" x="143" y="2454.5" width="128" height="128"/>
+                                                <rect key="frame" x="143" y="2464.5" width="128" height="128"/>
                                                 <connections>
                                                     <action selector="trucoMKT:" destination="5Fn-jG-omz" eventType="touchUpInside" id="E5C-fu-U2r"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truco Marcador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-9n-U75">
-                                                <rect key="frame" x="0.0" y="2582.5" width="414" height="28.5"/>
+                                                <rect key="frame" x="0.0" y="2592.5" width="414" height="28.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" red="0.97645872830000002" green="0.97646445039999996" blue="0.97647935149999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
@@ -611,7 +611,7 @@
                                             <constraint firstItem="dIM-Wt-5oy" firstAttribute="leading" secondItem="azL-vK-pvo" secondAttribute="leading" constant="10" id="xdN-Tg-uyA"/>
                                             <constraint firstItem="aQl-8O-Uxv" firstAttribute="top" secondItem="wjM-cl-F1t" secondAttribute="bottom" id="xrJ-oM-RUt"/>
                                             <constraint firstItem="3yV-ht-GdV" firstAttribute="top" secondItem="cXS-l5-fzW" secondAttribute="bottom" constant="10" id="xty-Ui-YHG"/>
-                                            <constraint firstItem="qUa-g0-Q8i" firstAttribute="top" secondItem="BxX-QA-Hbi" secondAttribute="bottom" constant="10" id="xyU-5X-emz"/>
+                                            <constraint firstItem="qUa-g0-Q8i" firstAttribute="top" secondItem="BxX-QA-Hbi" secondAttribute="bottom" constant="20" id="xyU-5X-emz"/>
                                             <constraint firstAttribute="trailing" secondItem="zeA-84-7VZ" secondAttribute="trailing" constant="10" id="y7s-yl-1Be"/>
                                             <constraint firstItem="aQl-8O-Uxv" firstAttribute="top" secondItem="wjM-cl-F1t" secondAttribute="bottom" id="yke-aW-zE4"/>
                                             <constraint firstItem="rCI-OQ-xRi" firstAttribute="leading" secondItem="ffb-ML-J5H" secondAttribute="trailing" constant="10" id="zIw-g4-WmD"/>
@@ -667,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="key-P2-bYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905.79710144927549" y="1338.6160714285713"/>
+            <point key="canvasLocation" x="929" y="1404"/>
         </scene>
         <!--Cadastro Organização-->
         <scene sceneID="2wy-BV-h8p">
@@ -1007,7 +1007,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFh-Av-TVP" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1725" y="133"/>
+            <point key="canvasLocation" x="1748" y="198"/>
         </scene>
         <!--Master-->
         <scene sceneID="2sk-ps-V3J">
@@ -1017,9 +1017,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="jfh-ik-xMC">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="vOb-JQ-vJL" detailTextLabel="CIa-ib-bi0" style="IBUITableViewCellStyleSubtitle" id="6Vu-4l-T3o" customClass="ProductCell" customModule="Sueca_Drink" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Vu-4l-T3o" id="22d-al-Imk">
                                     <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
@@ -1042,9 +1046,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <segue destination="t5K-PK-EtX" kind="show" identifier="showDetail" id="cdr-FR-qve"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -1060,44 +1061,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loadingShow" destination="jfh-ik-xMC" id="zVX-dW-1TB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doN-Kd-OJd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="133"/>
-        </scene>
-        <!--Detail-->
-        <scene sceneID="QE9-Vq-hHr">
-            <objects>
-                <viewController title="Detail" id="t5K-PK-EtX" customClass="DetailViewController" customModule="Sueca_Drink" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YX6-eS-Php"/>
-                        <viewControllerLayoutGuide type="bottom" id="7kx-Hq-2Nt"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Sss-q6-ieS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ABe-ht-x05">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="7kx-Hq-2Nt" firstAttribute="top" secondItem="ABe-ht-x05" secondAttribute="bottom" id="33K-2F-zqf"/>
-                            <constraint firstItem="ABe-ht-x05" firstAttribute="leading" secondItem="Sss-q6-ieS" secondAttribute="leading" id="4rX-OZ-zVQ"/>
-                            <constraint firstItem="ABe-ht-x05" firstAttribute="top" secondItem="Sss-q6-ieS" secondAttribute="top" id="CSK-Vx-twV"/>
-                            <constraint firstAttribute="trailing" secondItem="ABe-ht-x05" secondAttribute="trailing" id="i9k-TM-WPm"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="AG0-MK-siQ"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Detail" id="FLm-uU-GJc"/>
-                    <connections>
-                        <outlet property="imageView" destination="ABe-ht-x05" id="ZQe-F9-QTt"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uQJ-Pb-0Bq" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3216" y="133"/>
+            <point key="canvasLocation" x="2500" y="198"/>
         </scene>
     </scenes>
     <resources>

@@ -146,6 +146,10 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         bannerView.load(GADRequest())
         bannerView.delegate = self
+        
+        print("- Dinheiro ---------------------")
+        print(RazeFaceProducts.store.isProductPurchased("NoAdds"))
+        print("----------------------")
     }
     
 //    MARK: - Functions
