@@ -20,13 +20,13 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     var vetTitleText: [String] =
         [
             // A
-            "Um bebe",
+            "Um bebe água",
             
             //2
-            "Dois bebem",
+            "Dois bebem água",
             
             //3
-            "Três bebem",
+            "Três bebem água",
             
             //4
             "Saída",
@@ -50,55 +50,55 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Crie uma regra",
             
             //J
-            "Homens bebem",
+            "Homens bebem água",
             
             //Q
-            "Mulheres bebem",
+            "Mulheres bebem água",
             
             //K
-            "Todos bebem"
+            "Todos bebem água"
     ]
     
     var vetDescriptionText: [String] =
         [
             // A
-            "Escolha um jogador para beber.",
+            "Escolha um jogador para beber água.",
             
             //2
-            "Escolha dois jogadores para beber.",
+            "Escolha dois jogadores para beber água.",
             
             //3
-            "Escolha três jogadores para beber.",
+            "Escolha três jogadores para beber água.",
             
             //4
             "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
             
             //5
-            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem.",
+            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem água.",
             
             //6
-            "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe.",
+            "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe água.",
             
             //7
-            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.",
+            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe água. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.",
             
             //8
-            "Escolha uma palavra que não pode ser dita. Quem falar bebe.",
+            "Escolha uma palavra que não pode ser dita. Quem falar bebe água.",
             
             //9
             "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.",
             
             //10
-            "Determine uma regra para todos obedecerem. Exemplo: “Só pode beber com a mão esquerda”. Quem quebrar a regra, bebe.",
+            "Determine uma regra para todos obedecerem. Exemplo: “Só pode beber água com a mão esquerda”. Quem quebrar a regra, bebe água.",
             
             //J
-            "Todos os homens no jogo bebem.",
+            "Todos os homens no jogo bebem água.",
             
             //Q
-            "Todas as mulheres no jogo bebem.",
+            "Todas as mulheres no jogo bebem água.",
             
             //K
-            "Todos os jogadores bebem."
+            "Todos os jogadores bebem água."
     ]
     
 //    MARK: - IBOutlet
