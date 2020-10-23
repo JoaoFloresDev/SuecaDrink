@@ -16,7 +16,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     var lastValue = 100
     var ratingShow = false
-    var vetCardsImgName: [String] = [ "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+    var vetCardsImgName: [String] = ["5", "6", "7", "8", "9", "10", "J", "Q", "K"]
     var vetTitleText: [String] =
         [
             // A
@@ -29,7 +29,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
 //            "Três inimigos",
             
             //4
-            "Saída",
+//            "Saída",
             
             //5
             "Eu nunca",
@@ -61,7 +61,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     var vetDescriptionText: [String] =
         [
-            // A
+//            // A
 //            "Escolha um jogador para perder.",
 //
 //            //2
@@ -70,8 +70,8 @@ class ViewController: UIViewController, GADBannerViewDelegate {
 //            //3
 //            "Escolha três jogadores para perderem.",
 //
-            //4
-            "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
+//            //4
+//            "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
             
             //5
             "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, perdem.",

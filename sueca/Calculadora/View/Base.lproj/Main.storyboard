@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wood edit" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-Am-9Oc" userLabel="backGround">
-                                <rect key="frame" x="-41.5" y="-443" width="497" height="1792"/>
+                                <rect key="frame" x="-207" y="-891" width="828" height="2688"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrt-b3-YQy">
@@ -98,7 +98,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J77-rN-tNp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vrt-b3-YQy" firstAttribute="top" secondItem="eWP-9n-nSD" secondAttribute="bottom" constant="20" id="AbU-Nh-HtE"/>
                             <constraint firstItem="J77-rN-tNp" firstAttribute="trailing" secondItem="eWP-9n-nSD" secondAttribute="trailing" constant="20" id="Cte-zD-jEU"/>
@@ -106,11 +106,11 @@
                             <constraint firstItem="eWP-9n-nSD" firstAttribute="leading" secondItem="J77-rN-tNp" secondAttribute="leading" constant="20" id="ZAC-Ke-Bse"/>
                             <constraint firstItem="uyq-Am-9Oc" firstAttribute="centerX" secondItem="J77-rN-tNp" secondAttribute="centerX" id="aqn-6V-FLk"/>
                             <constraint firstItem="eWP-9n-nSD" firstAttribute="top" secondItem="J77-rN-tNp" secondAttribute="top" constant="20" id="asl-z6-oYP"/>
-                            <constraint firstItem="uyq-Am-9Oc" firstAttribute="height" secondItem="u3D-S8-Zwy" secondAttribute="height" multiplier="2" id="cLO-Mv-gR4"/>
+                            <constraint firstItem="uyq-Am-9Oc" firstAttribute="height" secondItem="u3D-S8-Zwy" secondAttribute="height" multiplier="3" id="cLO-Mv-gR4"/>
                             <constraint firstItem="uyq-Am-9Oc" firstAttribute="centerY" secondItem="J77-rN-tNp" secondAttribute="centerY" id="m4W-yj-URK"/>
                             <constraint firstAttribute="bottom" secondItem="Vrt-b3-YQy" secondAttribute="bottom" id="snA-Sa-86u"/>
                             <constraint firstItem="Vrt-b3-YQy" firstAttribute="leading" secondItem="J77-rN-tNp" secondAttribute="leading" id="x9P-Xv-bMg"/>
-                            <constraint firstItem="uyq-Am-9Oc" firstAttribute="width" secondItem="u3D-S8-Zwy" secondAttribute="width" multiplier="1.2" id="zfG-iO-JZl"/>
+                            <constraint firstItem="uyq-Am-9Oc" firstAttribute="width" secondItem="u3D-S8-Zwy" secondAttribute="width" multiplier="2" id="zfG-iO-JZl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -606,83 +606,6 @@
             </objects>
             <point key="canvasLocation" x="929" y="1404"/>
         </scene>
-        <!--Master-->
-        <scene sceneID="LGX-2p-OLa">
-            <objects>
-                <navigationController title="Master" modalPresentationStyle="fullScreen" id="opd-nb-rcp" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="jJW-fp-OgX"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="v8W-Mb-5P2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gMh-K5-DcP" kind="relationship" relationship="rootViewController" id="fdI-FY-4AK"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VFh-Av-TVP" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1748" y="198"/>
-        </scene>
-        <!--Master-->
-        <scene sceneID="2sk-ps-V3J">
-            <objects>
-                <tableViewController title="Master" id="gMh-K5-DcP" customClass="MasterViewController" customModule="Sueca_Drink" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="j6B-9d-WdT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <activityIndicatorView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="jfh-ik-xMC">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </activityIndicatorView>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="vOb-JQ-vJL" detailTextLabel="CIa-ib-bi0" style="IBUITableViewCellStyleSubtitle" id="6Vu-4l-T3o" customClass="ProductCell" customModule="Sueca_Drink" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Vu-4l-T3o" id="22d-al-Imk">
-                                    <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vOb-JQ-vJL">
-                                            <rect key="frame" x="20" y="6" width="31.5" height="19.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CIa-ib-bi0">
-                                            <rect key="frame" x="20" y="25.5" width="40.5" height="13.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="gMh-K5-DcP" id="lof-yi-jE1"/>
-                            <outlet property="delegate" destination="gMh-K5-DcP" id="6G0-ep-Ak9"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="63d-b0-CdX">
-                        <barButtonItem key="leftBarButtonItem" title="Fechar" id="DhL-Qd-ERL">
-                            <connections>
-                                <action selector="dismissView:" destination="gMh-K5-DcP" id="crd-Ru-8zz"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="loadingShow" destination="jfh-ik-xMC" id="zVX-dW-1TB"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="doN-Kd-OJd" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2500" y="198"/>
-        </scene>
     </scenes>
     <resources>
         <image name="document" width="512" height="512"/>
@@ -701,9 +624,6 @@
         <image name="hQ" width="450" height="1600"/>
         <image name="verso" width="900" height="1600"/>
         <image name="wood edit" width="640" height="1800"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
