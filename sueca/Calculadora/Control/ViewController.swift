@@ -16,17 +16,17 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     var lastValue = 100
     var ratingShow = false
-    var vetCardsImgName: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+    var vetCardsImgName: [String] = [ "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
     var vetTitleText: [String] =
         [
             // A
-            "Um bebe água",
-            
-            //2
-            "Dois bebem água",
-            
-            //3
-            "Três bebem água",
+//            "Um inimigo",
+//
+//            //2
+//            "Dois inimigos",
+//
+//            //3
+//            "Três inimigos",
             
             //4
             "Saída",
@@ -50,55 +50,55 @@ class ViewController: UIViewController, GADBannerViewDelegate {
             "Crie uma regra",
             
             //J
-            "Homens bebem água",
+            "Homens perdem",
             
             //Q
-            "Mulheres bebem água",
+            "Mulheres perdem",
             
             //K
-            "Todos bebem água"
+            "Todos perdem"
     ]
     
     var vetDescriptionText: [String] =
         [
             // A
-            "Escolha um jogador para beber água.",
-            
-            //2
-            "Escolha dois jogadores para beber água.",
-            
-            //3
-            "Escolha três jogadores para beber água.",
-            
+//            "Escolha um jogador para perder.",
+//
+//            //2
+//            "Escolha dois jogadores para perderem.",
+//
+//            //3
+//            "Escolha três jogadores para perderem.",
+//
             //4
             "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.",
             
             //5
-            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, bebem água.",
+            "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, perdem.",
             
             //6
-            "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, bebe água.",
+            "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, perde.",
             
             //7
-            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar bebe água. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.",
+            "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar perde. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.",
             
             //8
-            "Escolha uma palavra que não pode ser dita. Quem falar bebe água.",
+            "Escolha uma palavra que não pode ser dita. Quem falar perde.",
             
             //9
-            "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.",
+            "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém erre.",
             
             //10
-            "Determine uma regra para todos obedecerem. Exemplo: “Só pode beber água com a mão esquerda”. Quem quebrar a regra, bebe água.",
+            "Determine uma regra para todos obedecerem. Exemplo: “Só pode falar em pé”. Quem quebrar a regra, perde.",
             
             //J
-            "Todos os homens no jogo bebem água.",
+            "Todos os homens no jogo perdem.",
             
             //Q
-            "Todas as mulheres no jogo bebem água.",
+            "Todas as mulheres no jogo perdem.",
             
             //K
-            "Todos os jogadores bebem água."
+            "Todos os jogadores perdem."
     ]
     
 //    MARK: - IBOutlet
@@ -140,7 +140,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
 //    MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+		descriptionText.text = "Bom Jogo! \n\nTodos os  jogadores começam com 20 pontos"
     }
     
     override func viewWillAppear(_ animated: Bool) {

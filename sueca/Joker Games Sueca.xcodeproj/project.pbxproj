@@ -13,7 +13,6 @@
 		3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10C2237EBE900174399 /* Assets.xcassets */; };
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
 		529DD461062CEEA54F3FBEE3 /* Pods_Sueca_Drink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */; };
-		C422674A237212D5000A6DA3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4226749237212D5000A6DA3 /* Default-568h@2x.png */; };
 		C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC6F2496E48100971E0D /* IAPHelper.swift */; };
 		C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC702496E48100971E0D /* MasterViewController.swift */; };
 		C44DFC762496E48300971E0D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC712496E48200971E0D /* ProductCell.swift */; };
@@ -21,7 +20,6 @@
 		C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC732496E48300971E0D /* DetailViewController.swift */; };
 		C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44DFC792496EF9800971E0D /* StoreKit.framework */; };
 		C464352C23C899CC0033024D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C464352E23C899CC0033024D /* Localizable.strings */; };
-		C4885CF4236CBADC004B1556 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF2236CBADC004B1556 /* DrinksViewController.swift */; };
 		C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4885CF3236CBADC004B1556 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +34,6 @@
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
 		6AE9CAB9B2A52E18DBE3F5AA /* Pods_Sueca_Drink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sueca_Drink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.release.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.release.xcconfig"; sourceTree = "<group>"; };
-		C4226749237212D5000A6DA3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C44DFC6F2496E48100971E0D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		C44DFC702496E48100971E0D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		C44DFC712496E48200971E0D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
@@ -53,7 +50,6 @@
 		C464352F23C899D30033024D /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C464353023C899D70033024D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		C464353123C899D90033024D /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C4885CF2236CBADC004B1556 /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		C4885CF3236CBADC004B1556 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +69,6 @@
 		3D6EA0F92237EBE500174399 = {
 			isa = PBXGroup;
 			children = (
-				C4226749237212D5000A6DA3 /* Default-568h@2x.png */,
 				3D6EA1042237EBE500174399 /* Calculadora */,
 				3D6EA1032237EBE500174399 /* Products */,
 				7F38B1CF992CC29455A2A5C4 /* Pods */,
@@ -129,7 +124,6 @@
 			children = (
 				3D6EA1072237EBE500174399 /* ViewController.swift */,
 				C4885CF3236CBADC004B1556 /* CardsViewController.swift */,
-				C4885CF2236CBADC004B1556 /* DrinksViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -155,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D6EA1012237EBE500174399 /* Sueca Drink */ = {
+		3D6EA1012237EBE500174399 /* Joker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Sueca Drink" */;
+			buildConfigurationList = 3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Joker" */;
 			buildPhases = (
 				DEF2AE41AB2AE308C8C67156 /* [CP] Check Pods Manifest.lock */,
 				3D6EA0FE2237EBE500174399 /* Sources */,
@@ -169,7 +163,7 @@
 			);
 			dependencies = (
 			);
-			name = "Sueca Drink";
+			name = Joker;
 			productName = Calculadora;
 			productReference = 3D6EA1022237EBE500174399 /* Sueca Drink.app */;
 			productType = "com.apple.product-type.application";
@@ -190,7 +184,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Sueca Drink" */;
+			buildConfigurationList = 3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Joker Games Sueca" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -206,7 +200,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D6EA1012237EBE500174399 /* Sueca Drink */,
+				3D6EA1012237EBE500174399 /* Joker */,
 			);
 		};
 /* End PBXProject section */
@@ -218,7 +212,6 @@
 			files = (
 				C464352C23C899CC0033024D /* Localizable.strings in Resources */,
 				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
-				C422674A237212D5000A6DA3 /* Default-568h@2x.png in Resources */,
 				3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */,
 				3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */,
 			);
@@ -281,7 +274,6 @@
 				C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */,
 				C44DFC762496E48300971E0D /* ProductCell.swift in Sources */,
 				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
-				C4885CF4236CBADC004B1556 /* DrinksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -456,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 17;
+				MARKETING_VERSION = 23;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
@@ -470,7 +462,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 23;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -478,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 17;
+				MARKETING_VERSION = 23;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
@@ -489,7 +481,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Sueca Drink" */ = {
+		3D6EA0FD2237EBE500174399 /* Build configuration list for PBXProject "Joker Games Sueca" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D6EA1122237EBE900174399 /* Debug */,
@@ -498,7 +490,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Sueca Drink" */ = {
+		3D6EA1142237EBE900174399 /* Build configuration list for PBXNativeTarget "Joker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D6EA1152237EBE900174399 /* Debug */,

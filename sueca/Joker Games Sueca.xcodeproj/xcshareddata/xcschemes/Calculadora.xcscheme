@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3D6EA1012237EBE500174399"
                BuildableName = "Sueca Drink.app"
-               BlueprintName = "Sueca Drink"
-               ReferencedContainer = "container:Sueca Drink.xcodeproj">
+               BlueprintName = "Joker"
+               ReferencedContainer = "container:Joker Games Sueca.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,8 +32,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D6EA1012237EBE500174399"
             BuildableName = "Sueca Drink.app"
-            BlueprintName = "Sueca Drink"
-            ReferencedContainer = "container:Sueca Drink.xcodeproj">
+            BlueprintName = "Joker"
+            ReferencedContainer = "container:Joker Games Sueca.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D6EA1012237EBE500174399"
             BuildableName = "Sueca Drink.app"
-            BlueprintName = "Sueca Drink"
-            ReferencedContainer = "container:Sueca Drink.xcodeproj">
+            BlueprintName = "Joker"
+            ReferencedContainer = "container:Joker Games Sueca.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,8 +74,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D6EA1012237EBE500174399"
             BuildableName = "Sueca Drink.app"
-            BlueprintName = "Sueca Drink"
-            ReferencedContainer = "container:Sueca Drink.xcodeproj">
+            BlueprintName = "Joker"
+            ReferencedContainer = "container:Joker Games Sueca.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
