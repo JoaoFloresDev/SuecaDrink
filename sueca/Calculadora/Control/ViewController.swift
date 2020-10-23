@@ -144,37 +144,37 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if(RazeFaceProducts.store.isProductPurchased("NoAdds") || (UserDefaults.standard.object(forKey: "NoAdds") != nil)) {
-            print("Pro!")
-            if let placeHolder = mktPlaceholder {
-                placeHolder.removeFromSuperview()
-            }
-
-            if let banner = bannerView {
-                banner.removeFromSuperview()
-            }
-            
-            for constraints in descriptionText.constraints {
-                if(constraints.identifier == "100") {
-                    constraints.constant = constraints.constant - 50
-                }
-            }
-            
-            for constraints in viewDescription.constraints {
-                if(constraints.identifier == "100") {
-                    
-                    constraints.constant = constraints.constant - 50
-                }
-            }
-        } else {
-            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-            addBannerViewToView(bannerView)
-            bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
-            bannerView.rootViewController = self
-            
-            bannerView.load(GADRequest())
-            bannerView.delegate = self
-        }
+//        if(RazeFaceProducts.store.isProductPurchased("NoAdds") || (UserDefaults.standard.object(forKey: "NoAdds") != nil)) {
+//            print("Pro!")
+//            if let placeHolder = mktPlaceholder {
+//                placeHolder.removeFromSuperview()
+//            }
+//
+//            if let banner = bannerView {
+//                banner.removeFromSuperview()
+//            }
+//            
+//            for constraints in descriptionText.constraints {
+//                if(constraints.identifier == "100") {
+//                    constraints.constant = constraints.constant - 50
+//                }
+//            }
+//            
+//            for constraints in viewDescription.constraints {
+//                if(constraints.identifier == "100") {
+//                    
+//                    constraints.constant = constraints.constant - 50
+//                }
+//            }
+//        } else {
+//            bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+//            addBannerViewToView(bannerView)
+//            bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
+//            bannerView.rootViewController = self
+//            
+//            bannerView.load(GADRequest())
+//            bannerView.delegate = self
+//        }
     }
     
 //    MARK: - Functions
