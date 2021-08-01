@@ -35,10 +35,6 @@ class CardsViewController: UIViewController {
     override func viewDidLoad() {
         buttonUpgrade.layer.cornerRadius = 10
         buttonUpgrade.clipsToBounds = true
-//        for title in titleCollection {
-//            title.text = "teste"
-//            vetTitleText[newCard]
-//        }
 
         for (index, title) in titleCollection.enumerated() {
             title.text = vetTitleText[index]

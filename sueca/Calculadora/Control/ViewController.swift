@@ -168,7 +168,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         //                }
         //            }
         //        } else {
-        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
         addBannerViewToView(bannerView)
         bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
         bannerView.rootViewController = self
