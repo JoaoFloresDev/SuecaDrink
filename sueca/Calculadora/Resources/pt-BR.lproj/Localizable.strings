@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  Joker Games Sueca
+
+  Created by Joao Flores on 01/08/21.
+  Copyright © 2021 Gustavo Lima. All rights reserved.
+*/
+
+"1_title" = "Um inimigo";
+"2_title" = "Dois inimigos";
+"3_title" = "Três inimigos";
+"4_title" = "Saída";
+"5_title" = "Eu nunca";
+"6_title" = "Continência";
+"7_title" = "PI";
+"8_title" = "Palavra não dita";
+"9_title" = "C ou S";
+"10_title" = "Crie uma regra";
+"11_title" = "Homens perdem";
+"12_title" = "Mulheres perdem";
+"13_title" = "Todos perdem";
+
+"1_description" = "Escolha um jogador para perder.";
+"2_description" = "Escolha dois jogadores para perderem.";
+"3_description" = "Escolha três jogadores para perderem.";
+"4_description" = "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada.";
+"5_description" = "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, perdem.";
+"6_description" = "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, perde.";
+"7_description" = "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar perde. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.";
+"8_description" = "Escolha uma palavra que não pode ser dita. Quem falar perde.";
+"9_description" = "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém erre.";
+"10_description" = "Determine uma regra para todos obedecerem. Exemplo: “Só pode falar em pé”. Quem quebrar a regra, perde.";
+"11_description" = "Todos os homens no jogo perdem.";
+"12_description" = "Todas as mulheres no jogo perdem.";
+"13_description" = "Todos os jogadores perdem.";
+

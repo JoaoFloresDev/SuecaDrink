@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Joker Games Sueca
+
+  Created by Joao Flores on 01/08/21.
+  Copyright © 2021 Gustavo Lima. All rights reserved.
+*/
+
+"1_title" = "An enemy";
+"2_title" = "Two enemy";
+"3_title" = "Three enemy";
+"4_title" = "Exit";
+"5_title" = "I never";
+"6_title" = "Continence";
+"7_title" = "PI";
+"8_title" = "unspoken word";
+"9_title" = "C or S";
+"10_title" = "Create a rule";
+"11_title" = "Men lose";
+"12_title" = "Women lose";
+"13_title" = "All lose";
+
+"1_description" = "Choose a player to lose.";
+"2_description" = "Choose two players to lose.";
+"3_description" = "Choose three players to lose.";
+"4_description" = "Allows the player to go to the bathroom. This card can also be saved and traded.";
+"5_description" = "The game consists of someone raising a denial, all those who have already done it, lose.";
+"6_description" = "At any point during the game, you can place your hand on your forehead, saluting. The last one who notices and salutes, loses.";
+"7_description" = "Start a count up starting at 1, multiples of 3 and having 3 are replaced by PI, whoever makes a mistake loses. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.";
+"8_description" = "Choose a word that cannot be said. Whoever speaks loses.";
+"9_description" = "Words starting with C or S are prohibited. Say a word, the next player must say another of the same theme, following until someone makes a mistake.";
+"10_description" = "Set a rule for everyone to obey. Example: “You can only speak standing”. Whoever breaks the rule, loses.";
+"11_description" = "All men in the game lose.";
+"12_description" = "All women in the game lose.";
+"13_description" = "All players lose.";
