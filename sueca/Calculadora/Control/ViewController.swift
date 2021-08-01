@@ -9,6 +9,91 @@
 import UIKit
 import GoogleMobileAds
 
+var vetCardsImgName: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+var vetTitleText: [String] =
+    [
+        // A
+        "1_title".localized(),
+        //
+        //2
+        "2_title".localized(),
+
+        //3
+        "3_title".localized(),
+
+        //            4
+        "4_title".localized(),
+
+        //5
+        "5_title".localized(),
+
+        //6
+        "6_title".localized(),
+
+        //7
+        "7_title".localized(),
+
+        //8
+        "8_title".localized(),
+
+        //9
+        "9_title".localized(),
+
+        //10
+        "10_title".localized(),
+
+        //J
+        "11_title".localized(),
+
+        //Q
+        "12_title".localized(),
+
+        //K
+        "13_title".localized(),
+    ]
+
+var vetDescriptionText: [String] =
+    [
+        // A
+        "1_description".localized(),
+        //
+        //2
+        "2_description".localized(),
+
+        //3
+        "3_description".localized(),
+
+        //            4
+        "4_description".localized(),
+
+        //5
+        "5_description".localized(),
+
+        //6
+        "6_description".localized(),
+
+        //7
+        "7_description".localized(),
+
+        //8
+        "8_description".localized(),
+
+        //9
+        "9_description".localized(),
+
+        //10
+        "10_description".localized(),
+
+        //J
+        "11_description".localized(),
+
+        //Q
+        "12_description".localized(),
+
+        //K
+        "13_description".localized(),
+    ]
+
 class ViewController: UIViewController, GADBannerViewDelegate {
     
     //    MARK: - Variables
@@ -16,90 +101,6 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     
     var lastValue = 100
     var ratingShow = false
-    var vetCardsImgName: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
-    var vetTitleText: [String] =
-        [
-            // A
-            "1_title".localized(),
-            //
-            //2
-            "2_title".localized(),
-
-            //3
-            "3_title".localized(),
-            
-            //            4
-            "4_title".localized(),
-            
-            //5
-            "5_title".localized(),
-            
-            //6
-            "6_title".localized(),
-            
-            //7
-            "7_title".localized(),
-            
-            //8
-            "8_title".localized(),
-            
-            //9
-            "9_title".localized(),
-            
-            //10
-            "10_title".localized(),
-            
-            //J
-            "11_title".localized(),
-            
-            //Q
-            "12_title".localized(),
-            
-            //K
-            "13_title".localized(),
-        ]
-    
-    var vetDescriptionText: [String] =
-        [
-            // A
-            "1_description".localized(),
-            //
-            //2
-            "2_description".localized(),
-
-            //3
-            "3_description".localized(),
-
-            //            4
-            "4_description".localized(),
-
-            //5
-            "5_description".localized(),
-
-            //6
-            "6_description".localized(),
-
-            //7
-            "7_description".localized(),
-
-            //8
-            "8_description".localized(),
-
-            //9
-            "9_description".localized(),
-
-            //10
-            "10_description".localized(),
-
-            //J
-            "11_description".localized(),
-
-            //Q
-            "12_description".localized(),
-
-            //K
-            "13_description".localized(),
-        ]
     
     //    MARK: - IBOutlet
     @IBOutlet weak var titleText: UILabel!
@@ -120,8 +121,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         self.cardImg.transform = CGAffineTransform(scaleX: 0.7, y: 0.7 )
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
-            self.cardImg.image = UIImage(named:
-                                            NSLocalizedString(self.vetCardsImgName[newCard], comment: ""))
+            self.cardImg.image = UIImage(named: vetCardsImgName[newCard])
             
             self.cardImg.transform = .identity
         }, completion: nil)
@@ -140,7 +140,8 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     //    MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionText.text = "Bom Jogo! \n\nTodos os  jogadores começam com 20 pontos"
+        descriptionText.text = "welcomeMessage".localized()
+        titleText.text = "welcomeTitle".localized()
     }
     
     override func viewWillAppear(_ animated: Bool) {

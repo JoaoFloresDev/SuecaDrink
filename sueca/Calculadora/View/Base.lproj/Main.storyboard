@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eIb-Gq-KVi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eIb-Gq-KVi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -347,13 +347,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos os jogadores perdem 1 ponto" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-aR-lWz">
-                                                <rect key="frame" x="80" y="2207" width="324" height="153"/>
+                                                <rect key="frame" x="80" y="2215.5" width="324" height="153"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos perdem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ri-KL-FLh">
-                                                <rect key="frame" x="80" y="2190" width="324" height="17"/>
+                                                <rect key="frame" x="80" y="2190" width="324" height="25.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -499,7 +499,7 @@
                                             <constraint firstItem="vmf-6M-J9R" firstAttribute="height" secondItem="Dfd-dw-gbI" secondAttribute="height" multiplier="0.85" id="kf1-TA-IlF"/>
                                             <constraint firstItem="fqN-RR-WzZ" firstAttribute="height" secondItem="ruA-ot-YAN" secondAttribute="height" multiplier="0.15" id="klA-cf-dZZ"/>
                                             <constraint firstItem="vmf-6M-J9R" firstAttribute="top" secondItem="3yV-ht-GdV" secondAttribute="bottom" id="kqt-jp-ehV"/>
-                                            <constraint firstItem="9ri-KL-FLh" firstAttribute="height" secondItem="OBu-MJ-FTQ" secondAttribute="height" multiplier="0.1" id="kvz-Wl-rxM"/>
+                                            <constraint firstItem="9ri-KL-FLh" firstAttribute="height" secondItem="OBu-MJ-FTQ" secondAttribute="height" multiplier="0.15" id="kvz-Wl-rxM"/>
                                             <constraint firstItem="ruA-ot-YAN" firstAttribute="top" secondItem="Dfd-dw-gbI" secondAttribute="bottom" constant="10" id="kzF-Eq-xFU"/>
                                             <constraint firstItem="llf-Lt-yAK" firstAttribute="top" secondItem="IqD-6n-TtS" secondAttribute="bottom" constant="10" id="lXp-jr-VvC"/>
                                             <constraint firstItem="Vmb-dD-a2s" firstAttribute="top" secondItem="fqN-RR-WzZ" secondAttribute="bottom" id="ldN-Lw-gIe"/>
@@ -600,6 +600,32 @@
                     <size key="freeformSize" width="414" height="4500"/>
                     <connections>
                         <outlet property="buttonUpgrade" destination="BxX-QA-Hbi" id="QBy-Wc-Kft"/>
+                        <outletCollection property="titleCollection" destination="BTw-Ej-euB" collectionClass="NSMutableArray" id="7C6-wN-Gv3"/>
+                        <outletCollection property="titleCollection" destination="6KQ-HL-NVC" collectionClass="NSMutableArray" id="Sn5-9Z-Sth"/>
+                        <outletCollection property="titleCollection" destination="VOO-Jf-YIO" collectionClass="NSMutableArray" id="5Te-wk-HQn"/>
+                        <outletCollection property="titleCollection" destination="jTF-sB-vZt" collectionClass="NSMutableArray" id="kjR-VN-JnW"/>
+                        <outletCollection property="titleCollection" destination="gaS-4d-NBS" collectionClass="NSMutableArray" id="xwH-df-Ny2"/>
+                        <outletCollection property="titleCollection" destination="rCI-OQ-xRi" collectionClass="NSMutableArray" id="2hA-rC-V72"/>
+                        <outletCollection property="titleCollection" destination="UMA-Yk-UhO" collectionClass="NSMutableArray" id="ur1-pD-xli"/>
+                        <outletCollection property="titleCollection" destination="wjM-cl-F1t" collectionClass="NSMutableArray" id="gf7-YL-SNi"/>
+                        <outletCollection property="titleCollection" destination="d3a-f4-W2V" collectionClass="NSMutableArray" id="gIp-tT-ts0"/>
+                        <outletCollection property="titleCollection" destination="0Qa-bI-bQT" collectionClass="NSMutableArray" id="eFB-RG-Mnl"/>
+                        <outletCollection property="titleCollection" destination="3yV-ht-GdV" collectionClass="NSMutableArray" id="tCA-ga-WFE"/>
+                        <outletCollection property="titleCollection" destination="fqN-RR-WzZ" collectionClass="NSMutableArray" id="d1D-Nk-s2M"/>
+                        <outletCollection property="titleCollection" destination="9ri-KL-FLh" collectionClass="NSMutableArray" id="Zlp-dD-dzg"/>
+                        <outletCollection property="descriptionCollerction" destination="iV0-65-N1f" collectionClass="NSMutableArray" id="iVk-aT-Pv1"/>
+                        <outletCollection property="descriptionCollerction" destination="zeA-84-7VZ" collectionClass="NSMutableArray" id="AVJ-SZ-ZGb"/>
+                        <outletCollection property="descriptionCollerction" destination="hY2-qX-hI5" collectionClass="NSMutableArray" id="H7v-kw-LlZ"/>
+                        <outletCollection property="descriptionCollerction" destination="9a8-ze-dNF" collectionClass="NSMutableArray" id="hfz-ee-6lx"/>
+                        <outletCollection property="descriptionCollerction" destination="8RX-N7-lOZ" collectionClass="NSMutableArray" id="Edg-Au-Xoj"/>
+                        <outletCollection property="descriptionCollerction" destination="aSA-Mb-e3u" collectionClass="NSMutableArray" id="Uo5-qU-X1Z"/>
+                        <outletCollection property="descriptionCollerction" destination="vtL-IR-yzt" collectionClass="NSMutableArray" id="ZiY-Q4-rM4"/>
+                        <outletCollection property="descriptionCollerction" destination="aQl-8O-Uxv" collectionClass="NSMutableArray" id="fRU-3R-eYO"/>
+                        <outletCollection property="descriptionCollerction" destination="0ZV-Mn-UiT" collectionClass="NSMutableArray" id="qAc-Ea-Zuw"/>
+                        <outletCollection property="descriptionCollerction" destination="cXS-l5-fzW" collectionClass="NSMutableArray" id="bf6-9g-PoT"/>
+                        <outletCollection property="descriptionCollerction" destination="vmf-6M-J9R" collectionClass="NSMutableArray" id="PgB-gp-siV"/>
+                        <outletCollection property="descriptionCollerction" destination="Vmb-dD-a2s" collectionClass="NSMutableArray" id="ieZ-tf-Q8m"/>
+                        <outletCollection property="descriptionCollerction" destination="hSw-aR-lWz" collectionClass="NSMutableArray" id="7VQ-vg-s4b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="key-P2-bYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

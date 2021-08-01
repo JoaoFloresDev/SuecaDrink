@@ -6,6 +6,9 @@
   Copyright © 2021 Gustavo Lima. All rights reserved.
 */
 
+"welcomeMessage" = "Bom Jogo! \n\nTodos os  jogadores começam com 20 pontos";
+"welcomeTitle" = "Clique na carta para começar";
+
 "1_title" = "Um inimigo";
 "2_title" = "Dois inimigos";
 "3_title" = "Três inimigos";

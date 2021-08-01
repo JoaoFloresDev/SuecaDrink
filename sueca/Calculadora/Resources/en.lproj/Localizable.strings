@@ -6,6 +6,9 @@
   Copyright © 2021 Gustavo Lima. All rights reserved.
 */
 
+"welcomeMessage" = "Good game! \n\nAll players start with 20 points";
+"welcomeTitle" = "Click on the letter to start";
+
 "1_title" = "An enemy";
 "2_title" = "Two enemy";
 "3_title" = "Three enemy";
@@ -13,7 +16,7 @@
 "5_title" = "I never";
 "6_title" = "Continence";
 "7_title" = "PI";
-"8_title" = "unspoken word";
+"8_title" = "Unspoken word";
 "9_title" = "C or S";
 "10_title" = "Create a rule";
 "11_title" = "Men lose";

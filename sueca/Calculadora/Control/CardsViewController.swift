@@ -10,6 +10,9 @@ import UIKit
 import StoreKit
 class CardsViewController: UIViewController {
     
+    @IBOutlet var titleCollection: [UILabel]!
+    @IBOutlet var descriptionCollerction: [UILabel]!
+
     @IBAction func close(_ sender: Any) {
         navigationController?.popViewController(animated: true)
 
@@ -32,5 +35,17 @@ class CardsViewController: UIViewController {
     override func viewDidLoad() {
         buttonUpgrade.layer.cornerRadius = 10
         buttonUpgrade.clipsToBounds = true
+//        for title in titleCollection {
+//            title.text = "teste"
+//            vetTitleText[newCard]
+//        }
+
+        for (index, title) in titleCollection.enumerated() {
+            title.text = vetTitleText[index]
+        }
+
+        for (index, description) in descriptionCollerction.enumerated() {
+            description.text = vetDescriptionText[index]
+        }
     }
 }
