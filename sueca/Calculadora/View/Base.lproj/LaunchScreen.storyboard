@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6oa-ao-Bb0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <scene sceneID="ktd-rb-F5J">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="6oa-ao-Bb0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nHd-Kt-lBk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tcb-19-1MT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LsZ-fl-kZl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82A-dl-B1B">
-                                <rect key="frame" x="57" y="373" width="300" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDz-sg-TN9">
+                                <rect key="frame" x="47" y="353" width="320" height="190"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gambit" translatesAutoresizingMaskIntoConstraints="NO" id="bmj-Iv-Smb">
-                                        <rect key="frame" x="16" y="16" width="268" height="68"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gambit" translatesAutoresizingMaskIntoConstraints="NO" id="ykN-8b-znQ">
+                                        <rect key="frame" x="110" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ykN-8b-znQ" secondAttribute="height" multiplier="1:1" id="0ck-Jm-xb9"/>
+                                            <constraint firstAttribute="width" constant="100" id="Uqi-LE-vMT"/>
+                                        </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Gambit Studio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaH-oZ-1ew">
-                                        <rect key="frame" x="0.0" y="108" width="300" height="26"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gambit Studio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hC6-2M-ViT">
+                                        <rect key="frame" x="10" y="130" width="300" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="dIY-Kj-Fp5"/>
+                                            <constraint firstAttribute="width" constant="300" id="fRt-85-xXq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="bmj-Iv-Smb" firstAttribute="top" secondItem="82A-dl-B1B" secondAttribute="top" constant="16" id="GqC-re-mbR"/>
-                                    <constraint firstItem="bmj-Iv-Smb" firstAttribute="leading" secondItem="82A-dl-B1B" secondAttribute="leading" constant="16" id="LfF-70-yEV"/>
-                                    <constraint firstAttribute="bottom" secondItem="eaH-oZ-1ew" secondAttribute="bottom" constant="16" id="Ohj-Sj-YkN"/>
-                                    <constraint firstItem="eaH-oZ-1ew" firstAttribute="leading" secondItem="82A-dl-B1B" secondAttribute="leading" id="Olt-OO-617"/>
-                                    <constraint firstAttribute="trailing" secondItem="eaH-oZ-1ew" secondAttribute="trailing" id="dIj-Af-IJK"/>
-                                    <constraint firstAttribute="width" constant="300" id="daQ-ro-KUK"/>
-                                    <constraint firstItem="eaH-oZ-1ew" firstAttribute="top" secondItem="bmj-Iv-Smb" secondAttribute="bottom" constant="24" id="dbf-uR-Bd5"/>
-                                    <constraint firstAttribute="trailing" secondItem="bmj-Iv-Smb" secondAttribute="trailing" constant="16" id="eu8-Lz-rjQ"/>
-                                    <constraint firstAttribute="height" constant="150" id="lH6-vW-pgI"/>
+                                    <constraint firstItem="hC6-2M-ViT" firstAttribute="top" secondItem="ykN-8b-znQ" secondAttribute="bottom" constant="30" id="95m-fb-7Qv"/>
+                                    <constraint firstAttribute="trailing" secondItem="hC6-2M-ViT" secondAttribute="trailing" constant="10" id="LMt-EN-BCC"/>
+                                    <constraint firstItem="ykN-8b-znQ" firstAttribute="top" secondItem="IDz-sg-TN9" secondAttribute="top" id="Og1-ij-GN5"/>
+                                    <constraint firstItem="hC6-2M-ViT" firstAttribute="leading" secondItem="IDz-sg-TN9" secondAttribute="leading" constant="10" id="YRK-Mr-Zga"/>
+                                    <constraint firstItem="ykN-8b-znQ" firstAttribute="centerX" secondItem="IDz-sg-TN9" secondAttribute="centerX" id="epn-rD-1ou"/>
+                                    <constraint firstAttribute="bottom" secondItem="hC6-2M-ViT" secondAttribute="bottom" id="rJx-sE-hVl"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="vHt-13-wtf"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="82A-dl-B1B" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Rfq-n5-Skn"/>
-                            <constraint firstItem="82A-dl-B1B" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aat-Cs-axP"/>
+                            <constraint firstItem="IDz-sg-TN9" firstAttribute="centerX" secondItem="LsZ-fl-kZl" secondAttribute="centerX" id="1MQ-Xr-u41"/>
+                            <constraint firstItem="IDz-sg-TN9" firstAttribute="centerY" secondItem="LsZ-fl-kZl" secondAttribute="centerY" id="Drk-Ji-02a"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytE-lH-qHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>

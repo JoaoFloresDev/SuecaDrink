@@ -12,7 +12,9 @@ class CardsViewController: UIViewController {
     
     @IBOutlet var titleCollection: [UILabel]!
     @IBOutlet var descriptionCollerction: [UILabel]!
-
+    @IBOutlet weak var rolesLabel: UILabel!
+    @IBOutlet weak var closeButton: UIButton!
+    
     @IBAction func close(_ sender: Any) {
         navigationController?.popViewController(animated: true)
 
@@ -43,5 +45,8 @@ class CardsViewController: UIViewController {
         for (index, description) in descriptionCollerction.enumerated() {
             description.text = vetDescriptionText[index]
         }
+        
+        rolesLabel.text = "roles".localized()
+        closeButton.setTitle("close".localized(), for: .normal)
     }
 }

@@ -37,3 +37,5 @@
 "12_description" = "Todas as mulheres no jogo perdem.";
 "13_description" = "Todos os jogadores perdem.";
 
+"roles" = "Regras";
+"close" = "Fechar";

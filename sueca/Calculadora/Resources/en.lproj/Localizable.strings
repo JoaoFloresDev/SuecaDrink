@@ -36,3 +36,6 @@
 "11_description" = "All men in the game lose.";
 "12_description" = "All women in the game lose.";
 "13_description" = "All players lose.";
+
+"roles" = "Roles";
+"close" = "Close";

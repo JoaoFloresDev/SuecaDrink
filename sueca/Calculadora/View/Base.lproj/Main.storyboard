@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eIb-Gq-KVi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eIb-Gq-KVi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -600,6 +600,8 @@
                     <size key="freeformSize" width="414" height="4500"/>
                     <connections>
                         <outlet property="buttonUpgrade" destination="BxX-QA-Hbi" id="QBy-Wc-Kft"/>
+                        <outlet property="closeButton" destination="RXR-qa-3Vs" id="oG3-Z8-B9d"/>
+                        <outlet property="rolesLabel" destination="WWk-eD-RhW" id="HOP-Zb-0S6"/>
                         <outletCollection property="titleCollection" destination="BTw-Ej-euB" collectionClass="NSMutableArray" id="7C6-wN-Gv3"/>
                         <outletCollection property="titleCollection" destination="6KQ-HL-NVC" collectionClass="NSMutableArray" id="Sn5-9Z-Sth"/>
                         <outletCollection property="titleCollection" destination="VOO-Jf-YIO" collectionClass="NSMutableArray" id="5Te-wk-HQn"/>
@@ -630,7 +632,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="key-P2-bYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="1404"/>
+            <point key="canvasLocation" x="928.98550724637687" y="1403.5714285714284"/>
         </scene>
     </scenes>
     <resources>
