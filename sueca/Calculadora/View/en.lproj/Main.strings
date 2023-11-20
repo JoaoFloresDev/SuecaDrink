@@ -1,0 +1,105 @@
+
+/* Class = "UILabel"; text = "Crie uma regra."; ObjectID = "0Qa-bI-bQT"; */
+"0Qa-bI-bQT.text" = "Crie uma regra.";
+
+/* Class = "UILabel"; text = "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar."; ObjectID = "0ZV-Mn-UiT"; */
+"0ZV-Mn-UiT.text" = "São proibidas palavras iniciadas com C ou S. Diga uma palavra, o próximo jogador deve dizer outra do mesmo tema, seguindo até que alguém errar.";
+
+/* Class = "UILabel"; text = "Rules icon by Kiranshastry from freepik.com"; ObjectID = "0pd-tG-ZoK"; */
+"0pd-tG-ZoK.text" = "Rules icon by Kiranshastry from freepik.com";
+
+/* Class = "UILabel"; text = "All icons made by Freepik from www.flaticon.com"; ObjectID = "2g1-ia-c5z"; */
+"2g1-ia-c5z.text" = "All icons made by Freepik from www.flaticon.com";
+
+/* Class = "UILabel"; text = "Homens perdem."; ObjectID = "3yV-ht-GdV"; */
+"3yV-ht-GdV.text" = "Homens perdem.";
+
+/* Class = "UILabel"; text = "Dois inimigos."; ObjectID = "6KQ-HL-NVC"; */
+"6KQ-HL-NVC.text" = "Dois inimigos.";
+
+/* Class = "UILabel"; text = "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, perdem."; ObjectID = "8RX-N7-lOZ"; */
+"8RX-N7-lOZ.text" = "A brincadeira consiste em alguém levantar uma negação, todos aqueles que já tiverem feito, perdem.";
+
+/* Class = "UILabel"; text = "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada"; ObjectID = "9a8-ze-dNF"; */
+"9a8-ze-dNF.text" = "Permite ao jogador uma ida ao banheiro. Essa carta também pode ser guardada e negociada";
+
+/* Class = "UILabel"; text = "Todos perdem"; ObjectID = "9ri-KL-FLh"; */
+"9ri-KL-FLh.text" = "Todos perdem";
+
+/* Class = "UILabel"; text = "Um inimigo."; ObjectID = "BTw-Ej-euB"; */
+"BTw-Ej-euB.text" = "Um inimigo.";
+
+/* Class = "UILabel"; text = "Clique na carta para começar"; ObjectID = "GnK-vE-i7o"; */
+"GnK-vE-i7o.text" = "Clique na carta para começar";
+
+/* Class = "UINavigationItem"; title = "Cadastro Organização"; ObjectID = "Ktr-LK-VNH"; */
+"Ktr-LK-VNH.title" = "Cadastro Organização";
+
+/* Class = "UIButton"; normalTitle = "Fechar"; ObjectID = "RXR-qa-3Vs"; */
+"RXR-qa-3Vs.normalTitle" = "Fechar";
+
+/* Class = "UILabel"; text = "PI"; ObjectID = "UMA-Yk-UhO"; */
+"UMA-Yk-UhO.text" = "PI";
+
+/* Class = "UILabel"; text = "Três inimigos."; ObjectID = "VOO-Jf-YIO"; */
+"VOO-Jf-YIO.text" = "Três inimigos.";
+
+/* Class = "UILabel"; text = "Todas as mulheres no jogo perdem 1 ponto."; ObjectID = "Vmb-dD-a2s"; */
+"Vmb-dD-a2s.text" = "Todas as mulheres no jogo perdem 1 ponto.";
+
+/* Class = "UILabel"; text = "Regras"; ObjectID = "WWk-eD-RhW"; */
+"WWk-eD-RhW.text" = "Regras";
+
+/* Class = "UILabel"; text = "Bom Jogo!"; ObjectID = "ZHm-S9-cM7"; */
+"ZHm-S9-cM7.text" = "Bom Jogo!";
+
+/* Class = "UILabel"; text = "Escolha uma palavra que não pode ser dita. Quem falar perde."; ObjectID = "aQl-8O-Uxv"; */
+"aQl-8O-Uxv.text" = "Escolha uma palavra que não pode ser dita. Quem falar perde.";
+
+/* Class = "UILabel"; text = "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, perde."; ObjectID = "aSA-Mb-e3u"; */
+"aSA-Mb-e3u.text" = "Em qualquer momento do jogo, você pode colocar a mão na testa, fazendo continência. O último que perceber e fizer continência, perde.";
+
+/* Class = "UILabel"; text = "Determine uma regra para todos obedecerem. Exemplo: “Só pode falar em pé”. Quem quebrar a regra, perde."; ObjectID = "cXS-l5-fzW"; */
+"cXS-l5-fzW.text" = "Determine uma regra para todos obedecerem. Exemplo: “Só pode falar em pé”. Quem quebrar a regra, perde.";
+
+/* Class = "UILabel"; text = "Photos made by Freepik from www.freepik.com"; ObjectID = "cbI-Qd-xir"; */
+"cbI-Qd-xir.text" = "Photos made by Freepik from www.freepik.com";
+
+/* Class = "UILabel"; text = "C ou S"; ObjectID = "d3a-f4-W2V"; */
+"d3a-f4-W2V.text" = "C ou S";
+
+/* Class = "UILabel"; text = "Mulheres perdem."; ObjectID = "fqN-RR-WzZ"; */
+"fqN-RR-WzZ.text" = "Mulheres perdem.";
+
+/* Class = "UILabel"; text = "Eu nunca"; ObjectID = "gaS-4d-NBS"; */
+"gaS-4d-NBS.text" = "Eu nunca";
+
+/* Class = "UILabel"; text = "Todos os jogadores perdem 1 ponto"; ObjectID = "hSw-aR-lWz"; */
+"hSw-aR-lWz.text" = "Todos os jogadores perdem 1 ponto";
+
+/* Class = "UILabel"; text = "Escolha três jogadores para perder 1 ponto."; ObjectID = "hY2-qX-hI5"; */
+"hY2-qX-hI5.text" = "Escolha três jogadores para perder 1 ponto.";
+
+/* Class = "UILabel"; text = "Escolha um jogador para perder 1 ponto."; ObjectID = "iV0-65-N1f"; */
+"iV0-65-N1f.text" = "Escolha um jogador para perder 1 ponto.";
+
+/* Class = "UILabel"; text = "Saída"; ObjectID = "jTF-sB-vZt"; */
+"jTF-sB-vZt.text" = "Saída";
+
+/* Class = "UILabel"; text = "Cards projected by brgfx / Freepik"; ObjectID = "juw-GA-pCS"; */
+"juw-GA-pCS.text" = "Cards projected by brgfx / Freepik";
+
+/* Class = "UILabel"; text = "Continência"; ObjectID = "rCI-OQ-xRi"; */
+"rCI-OQ-xRi.text" = "Continência";
+
+/* Class = "UILabel"; text = "Todos os homens no jogo perdem 1 ponto."; ObjectID = "vmf-6M-J9R"; */
+"vmf-6M-J9R.text" = "Todos os homens no jogo perdem 1 ponto.";
+
+/* Class = "UILabel"; text = "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar perde. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI."; ObjectID = "vtL-IR-yzt"; */
+"vtL-IR-yzt.text" = "Inicie uma contagem crescente iniciada em 1, múltiplos de 3 e que tenham 3 são substituídos por PI, quem errar perde. Ex: 1, 2, PI, 4, 5, PI, 7, 8, PI.";
+
+/* Class = "UILabel"; text = "Palavra não dita"; ObjectID = "wjM-cl-F1t"; */
+"wjM-cl-F1t.text" = "Palavra não dita";
+
+/* Class = "UILabel"; text = "Escolha dois jogadores para perder 1 ponto."; ObjectID = "zeA-84-7VZ"; */
+"zeA-84-7VZ.text" = "Escolha dois jogadores para perder 1 ponto.";

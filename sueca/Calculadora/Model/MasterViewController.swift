@@ -60,6 +60,13 @@ class MasterViewController: UITableViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(MasterViewController.handlePurchaseNotification(_:)),
                                            name: .IAPHelperPurchaseNotification,
                                            object: nil)
+      
+      let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
+      let changePasswordCalcMode = storyboard.instantiateViewController(withIdentifier: "Purchase")
+//      if let changePasswordCalcMode = changePasswordCalcMode as? PurchaseViewController {
+//          changePasswordCalcMode.delegate = viewController
+//      }
+      self.present(changePasswordCalcMode, animated: true)
   }
   
   override func viewDidAppear(_ animated: Bool) {

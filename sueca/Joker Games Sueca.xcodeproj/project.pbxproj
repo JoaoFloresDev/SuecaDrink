@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA1092237EBE500174399 /* Main.storyboard */; };
 		3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10C2237EBE900174399 /* Assets.xcassets */; };
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
+		73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */; };
+		73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */; };
+		73BD06572B0BB0D400205E4B /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06522B0BB07A00205E4B /* DiamondView.swift */; };
+		73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06532B0BB07A00205E4B /* PurchaseBenetList.swift */; };
+		73BD06592B0BB0EA00205E4B /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BD06542B0BB07A00205E4B /* Purchase.storyboard */; };
 		C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC6F2496E48100971E0D /* IAPHelper.swift */; };
 		C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC702496E48100971E0D /* MasterViewController.swift */; };
 		C44DFC762496E48300971E0D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC712496E48200971E0D /* ProductCell.swift */; };
@@ -34,6 +39,12 @@
 		3D6EA10F2237EBE900174399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D6EA1112237EBE900174399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
+		73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
+		73BD06522B0BB07A00205E4B /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
+		73BD06532B0BB07A00205E4B /* PurchaseBenetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseBenetList.swift; sourceTree = "<group>"; };
+		73BD06542B0BB07A00205E4B /* Purchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Purchase.storyboard; sourceTree = "<group>"; };
+		73BD065B2B0BB2AA00205E4B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.release.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.release.xcconfig"; sourceTree = "<group>"; };
 		B78E80CE2D2E7C5E3870860D /* Pods_Joker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44DFC6F2496E48100971E0D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
@@ -99,6 +110,7 @@
 		3D7C50B3225151DC00535F55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				73BD064F2B0BB07A00205E4B /* Purchase */,
 				C44DFC732496E48300971E0D /* DetailViewController.swift */,
 				C44DFC6F2496E48100971E0D /* IAPHelper.swift */,
 				C44DFC702496E48100971E0D /* MasterViewController.swift */,
@@ -124,6 +136,18 @@
 				C4885CF3236CBADC004B1556 /* CardsViewController.swift */,
 			);
 			path = Control;
+			sourceTree = "<group>";
+		};
+		73BD064F2B0BB07A00205E4B /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */,
+				73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */,
+				73BD06522B0BB07A00205E4B /* DiamondView.swift */,
+				73BD06532B0BB07A00205E4B /* PurchaseBenetList.swift */,
+				73BD06542B0BB07A00205E4B /* Purchase.storyboard */,
+			);
+			path = Purchase;
 			sourceTree = "<group>";
 		};
 		7F38B1CF992CC29455A2A5C4 /* Pods */ = {
@@ -226,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B9268D26B72BAC008A79F6 /* Localizable.strings in Resources */,
+				73BD06592B0BB0EA00205E4B /* Purchase.storyboard in Resources */,
 				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
 				3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */,
 				3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */,
@@ -286,10 +311,14 @@
 				3D6EA1062237EBE500174399 /* AppDelegate.swift in Sources */,
 				C4B9267226B725FA008A79F6 /* String.swift in Sources */,
 				C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */,
+				73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */,
 				C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */,
+				73BD06572B0BB0D400205E4B /* DiamondView.swift in Sources */,
 				C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */,
 				C44DFC762496E48300971E0D /* ProductCell.swift in Sources */,
 				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
+				73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */,
+				73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +330,7 @@
 			children = (
 				3D6EA10A2237EBE500174399 /* Base */,
 				C4B9268B26B72B5E008A79F6 /* pt-BR */,
+				73BD065B2B0BB2AA00205E4B /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -453,7 +483,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,7 +505,7 @@
 				CURRENT_PROJECT_VERSION = 25;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = Calculadora/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

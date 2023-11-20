@@ -30,7 +30,7 @@ import Foundation
 
 public struct RazeFaceProducts {
   
-  public static let SwiftShopping = "NoAdds"
+  public static let SwiftShopping = "noads.joker"
   
   private static let productIdentifiers: Set<ProductIdentifier> = [RazeFaceProducts.SwiftShopping]
 
