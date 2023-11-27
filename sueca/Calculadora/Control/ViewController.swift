@@ -96,6 +96,8 @@ var vetDescriptionText: [String] =
 
 class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewControllerDelegate {
     func purchased() {
+        viewDescriptionConstraint.constant = 240
+        textBottomConstraint.constant = 30
         bannerView.removeFromSuperview()
     }
     
@@ -107,6 +109,8 @@ class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewContr
     var ratingShow = false
     
     //    MARK: - IBOutlet
+    @IBOutlet weak var textBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var viewDescriptionConstraint: NSLayoutConstraint!
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet weak var cardImg: UIImageView!
@@ -160,11 +164,11 @@ class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewContr
     
     override func viewDidAppear(_ animated: Bool) {
         let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
-        let changePasswordCalcMode = storyboard.instantiateViewController(withIdentifier: "Purchase")
-        if let changePasswordCalcMode = changePasswordCalcMode as? PurchaseViewController {
-            changePasswordCalcMode.delegate = self
+        let purchaseVC = storyboard.instantiateViewController(withIdentifier: "Purchase")
+        if let purchaseVC = purchaseVC as? PurchaseViewController {
+            purchaseVC.delegate = self
         }
-        self.present(changePasswordCalcMode, animated: true)
+        self.present(purchaseVC, animated: true)
     }
     
     //    MARK: - Functions
