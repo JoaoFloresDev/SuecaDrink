@@ -146,11 +146,11 @@ class PurchaseViewController: UIViewController {
     
     private func confirmCheckmark() {
         DispatchQueue.main.async {
-            if RazeFaceProducts.store.isProductPurchased("NoAds.Calc") {
+            if RazeFaceProducts.store.isProductPurchased("noads.joker") {
                 self.actionButton.setTitle("✓✓✓", for: .normal)
                 self.actionButton.backgroundColor  = .systemGreen
                 self.actionButton.isUserInteractionEnabled = false
-//                Defaults.setBool(.premiumPurchased, true)
+                UserDefaults.standard.set(true, forKey: "premiumPurchased")
                 self.delegate?.purchased()
             }
         }
@@ -166,7 +166,7 @@ class PurchaseViewController: UIViewController {
     
     private func setupLocalizedText() {
         customNavigator.title = String()
-//        closeButton.title = Text.close.localized()
-//        restoreButton.title = Text.restore.localized()
+        closeButton.title = "close".localized()
+        restoreButton.title = "restore".localized()
     }
 }

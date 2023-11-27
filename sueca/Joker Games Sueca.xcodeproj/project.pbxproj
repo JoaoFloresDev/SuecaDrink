@@ -19,8 +19,6 @@
 		73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06532B0BB07A00205E4B /* PurchaseBenetList.swift */; };
 		73BD06592B0BB0EA00205E4B /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BD06542B0BB07A00205E4B /* Purchase.storyboard */; };
 		C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC6F2496E48100971E0D /* IAPHelper.swift */; };
-		C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC702496E48100971E0D /* MasterViewController.swift */; };
-		C44DFC762496E48300971E0D /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC712496E48200971E0D /* ProductCell.swift */; };
 		C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC722496E48200971E0D /* RazeFaceProducts.swift */; };
 		C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44DFC732496E48300971E0D /* DetailViewController.swift */; };
 		C44DFC7A2496EF9800971E0D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44DFC792496EF9800971E0D /* StoreKit.framework */; };
@@ -48,8 +46,6 @@
 		918CFB2B1BB997C898251A99 /* Pods-Sueca Drink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.release.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.release.xcconfig"; sourceTree = "<group>"; };
 		B78E80CE2D2E7C5E3870860D /* Pods_Joker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Joker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44DFC6F2496E48100971E0D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		C44DFC702496E48100971E0D /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		C44DFC712496E48200971E0D /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C44DFC722496E48200971E0D /* RazeFaceProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RazeFaceProducts.swift; sourceTree = "<group>"; };
 		C44DFC732496E48300971E0D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C44DFC792496EF9800971E0D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -113,8 +109,6 @@
 				73BD064F2B0BB07A00205E4B /* Purchase */,
 				C44DFC732496E48300971E0D /* DetailViewController.swift */,
 				C44DFC6F2496E48100971E0D /* IAPHelper.swift */,
-				C44DFC702496E48100971E0D /* MasterViewController.swift */,
-				C44DFC712496E48200971E0D /* ProductCell.swift */,
 				C44DFC722496E48200971E0D /* RazeFaceProducts.swift */,
 			);
 			path = Model;
@@ -310,12 +304,10 @@
 				3D6EA1082237EBE500174399 /* ViewController.swift in Sources */,
 				3D6EA1062237EBE500174399 /* AppDelegate.swift in Sources */,
 				C4B9267226B725FA008A79F6 /* String.swift in Sources */,
-				C44DFC752496E48300971E0D /* MasterViewController.swift in Sources */,
 				73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */,
 				C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */,
 				73BD06572B0BB0D400205E4B /* DiamondView.swift in Sources */,
 				C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */,
-				C44DFC762496E48300971E0D /* ProductCell.swift in Sources */,
 				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
 				73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */,
 				73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */,

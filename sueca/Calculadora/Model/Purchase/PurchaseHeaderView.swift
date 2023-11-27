@@ -41,9 +41,13 @@ class PurchaseHeaderView: UIView {
         
         // Configuração do MarketIcon
         marketIcon.contentMode = .scaleAspectFit
-//        marketIcon.image = UIImage(named: Img.iconMrk.name())
+        marketIcon.image = UIImage(named: "iconSueca")
+        
+        marketIcon.layer.cornerRadius = 25 // Ajuste este valor para alterar a curvatura
+        marketIcon.layer.masksToBounds = true
+        
         marketIcon.snp.makeConstraints { make in
-            make.height.width.equalTo(70)
+            make.height.width.equalTo(110)
         }
         
         // Configuração do Title

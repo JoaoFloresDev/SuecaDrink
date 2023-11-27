@@ -21,32 +21,13 @@ class PurchaseBenetList: UIView {
         // Configuração do DiamondView
         addSubview(stackView)
         
-//        // Configuração do StackView
-//        stackView.axis = .vertical
-//        // Adicionar elementos ao StackView
-//        stackView.addArrangedSubview(createSpacer(height:  12))
-//        stackView.addArrangedSubview(
-//            PurchaseBenefitItem(
-//                text: "Suporte para vídeos",
-//                imageName: Img.videosupport.name())
-//        )
-//        stackView.addArrangedSubview(createSpacer(height:  12))
-//        stackView.addArrangedSubview(
-//            PurchaseBenefitItem(
-//                text: "Sem anúncios",
-//                imageName: Img.noads.name())
-//        )
-//        stackView.addArrangedSubview(createSpacer(height:  12))
-//        stackView.addArrangedSubview(
-//            PurchaseBenefitItem(
-//                text: "Armazenamento ilimitado",
-//                imageName: Img.unlimited.name())
-//        )
-//        stackView.addArrangedSubview(createSpacer(height:  12))
-//        
-//        stackView.snp.makeConstraints { make in
-//            make.top.bottom.leading.trailing.equalToSuperview()
-//        }
+        // Configuração do StackView
+        stackView.axis = .vertical
+        stackView.addArrangedSubview(createSpacer(height:  24))
+        
+        stackView.snp.makeConstraints { make in
+            make.top.bottom.leading.trailing.equalToSuperview()
+        }
     }
     
     private func createSpacer(height: CGFloat) -> UIView {
