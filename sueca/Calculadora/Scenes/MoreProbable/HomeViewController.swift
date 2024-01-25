@@ -1,11 +1,11 @@
 import UIKit
 import SnapKit
-import ZLSwipeableViewSwift
+//import ZLSwipeableViewSwift
 import UIColor_FlatColors
 import Cartography
 
 class HomeViewController: ZLSwipeableViewController {
-    let rightBarButtonItemTitle = "↻"
+    let rightBarButtonItemTitle = "Rewind"
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -15,7 +15,18 @@
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
 		737BAF5B2B629C6100C4E981 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF5A2B629C6100C4E981 /* CardView.swift */; };
 		737BAF5D2B629C8C00C4E981 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */; };
-		737BAF5F2B62AB4600C4E981 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737BAF5E2B62AB4600C4E981 /* CardContentView.xib */; };
+		737BAF642B62B0F900C4E981 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF632B62B0F900C4E981 /* Direction.swift */; };
+		737BAF652B62B0F900C4E981 /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF612B62B0F900C4E981 /* ViewManager.swift */; };
+		737BAF662B62B0F900C4E981 /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF622B62B0F900C4E981 /* ZLSwipeableView.swift */; };
+		737BAF672B62B0F900C4E981 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF602B62B0F900C4E981 /* Scheduler.swift */; };
+		737BAF792B62B28A00C4E981 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF692B62B24000C4E981 /* MenuTableViewController.swift */; };
+		737BAF7B2B62B29600C4E981 /* AlwaysSwipeDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF6C2B62B24000C4E981 /* AlwaysSwipeDemoViewController.swift */; };
+		737BAF7D2B62B29B00C4E981 /* CustomAnimationDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF702B62B24000C4E981 /* CustomAnimationDemoViewController.swift */; };
+		737BAF7E2B62B29D00C4E981 /* HistoryDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF712B62B24000C4E981 /* HistoryDemoViewController.swift */; };
+		737BAF7F2B62B2A000C4E981 /* ShouldSwipeDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF722B62B24000C4E981 /* ShouldSwipeDemoViewController.swift */; };
+		737BAF802B62B2A200C4E981 /* CustomDirectionDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF752B62B24000C4E981 /* CustomDirectionDemoViewController.swift */; };
+		737BAF812B62B2A400C4E981 /* CustomSwipeDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF772B62B24000C4E981 /* CustomSwipeDemoViewController.swift */; };
+		737BAF822B62B2A600C4E981 /* PreviousViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF782B62B24000C4E981 /* PreviousViewDemoViewController.swift */; };
 		73B203C62B6202C200D8CC86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B203C52B6202C200D8CC86 /* HomeViewController.swift */; };
 		73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */; };
 		73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */; };
@@ -43,7 +54,19 @@
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
 		737BAF5A2B629C6100C4E981 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
-		737BAF5E2B62AB4600C4E981 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
+		737BAF602B62B0F900C4E981 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		737BAF612B62B0F900C4E981 /* ViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		737BAF622B62B0F900C4E981 /* ZLSwipeableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
+		737BAF632B62B0F900C4E981 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		737BAF692B62B24000C4E981 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		737BAF6A2B62B24000C4E981 /* CardContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
+		737BAF6C2B62B24000C4E981 /* AlwaysSwipeDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysSwipeDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF702B62B24000C4E981 /* CustomAnimationDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnimationDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF712B62B24000C4E981 /* HistoryDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF722B62B24000C4E981 /* ShouldSwipeDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShouldSwipeDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF752B62B24000C4E981 /* CustomDirectionDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDirectionDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF772B62B24000C4E981 /* CustomSwipeDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwipeDemoViewController.swift; sourceTree = "<group>"; };
+		737BAF782B62B24000C4E981 /* PreviousViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousViewDemoViewController.swift; sourceTree = "<group>"; };
 		73B203C52B6202C200D8CC86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
@@ -152,12 +175,32 @@
 		737BAF592B629BE600C4E981 /* MoreProbable */ = {
 			isa = PBXGroup;
 			children = (
-				737BAF5E2B62AB4600C4E981 /* CardContentView.xib */,
+				737BAF682B62B24000C4E981 /* ZLSwipeableViewSwiftDemo */,
 				73B203C52B6202C200D8CC86 /* HomeViewController.swift */,
 				737BAF5A2B629C6100C4E981 /* CardView.swift */,
+				737BAF712B62B24000C4E981 /* HistoryDemoViewController.swift */,
 				737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */,
 			);
 			path = MoreProbable;
+			sourceTree = "<group>";
+		};
+		737BAF682B62B24000C4E981 /* ZLSwipeableViewSwiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				737BAF692B62B24000C4E981 /* MenuTableViewController.swift */,
+				737BAF6A2B62B24000C4E981 /* CardContentView.xib */,
+				737BAF6C2B62B24000C4E981 /* AlwaysSwipeDemoViewController.swift */,
+				737BAF702B62B24000C4E981 /* CustomAnimationDemoViewController.swift */,
+				737BAF722B62B24000C4E981 /* ShouldSwipeDemoViewController.swift */,
+				737BAF752B62B24000C4E981 /* CustomDirectionDemoViewController.swift */,
+				737BAF772B62B24000C4E981 /* CustomSwipeDemoViewController.swift */,
+				737BAF782B62B24000C4E981 /* PreviousViewDemoViewController.swift */,
+				737BAF632B62B0F900C4E981 /* Direction.swift */,
+				737BAF602B62B0F900C4E981 /* Scheduler.swift */,
+				737BAF612B62B0F900C4E981 /* ViewManager.swift */,
+				737BAF622B62B0F900C4E981 /* ZLSwipeableView.swift */,
+			);
+			path = ZLSwipeableViewSwiftDemo;
 			sourceTree = "<group>";
 		};
 		73BD064F2B0BB07A00205E4B /* Purchase */ = {
@@ -271,7 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				737BAF5F2B62AB4600C4E981 /* CardContentView.xib in Resources */,
 				C4B9268D26B72BAC008A79F6 /* Localizable.strings in Resources */,
 				73BD06592B0BB0EA00205E4B /* Purchase.storyboard in Resources */,
 				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
@@ -331,18 +373,30 @@
 			files = (
 				C44DFC782496E48300971E0D /* DetailViewController.swift in Sources */,
 				3D6EA1082237EBE500174399 /* ViewController.swift in Sources */,
+				737BAF802B62B2A200C4E981 /* CustomDirectionDemoViewController.swift in Sources */,
+				737BAF652B62B0F900C4E981 /* ViewManager.swift in Sources */,
+				737BAF792B62B28A00C4E981 /* MenuTableViewController.swift in Sources */,
 				3D6EA1062237EBE500174399 /* AppDelegate.swift in Sources */,
 				C4B9267226B725FA008A79F6 /* String.swift in Sources */,
+				737BAF662B62B0F900C4E981 /* ZLSwipeableView.swift in Sources */,
 				73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */,
+				737BAF7E2B62B29D00C4E981 /* HistoryDemoViewController.swift in Sources */,
 				C4885CF5236CBADC004B1556 /* CardsViewController.swift in Sources */,
 				73BD06572B0BB0D400205E4B /* DiamondView.swift in Sources */,
+				737BAF672B62B0F900C4E981 /* Scheduler.swift in Sources */,
 				737BAF5B2B629C6100C4E981 /* CardView.swift in Sources */,
+				737BAF7F2B62B2A000C4E981 /* ShouldSwipeDemoViewController.swift in Sources */,
+				737BAF822B62B2A600C4E981 /* PreviousViewDemoViewController.swift in Sources */,
+				737BAF642B62B0F900C4E981 /* Direction.swift in Sources */,
 				C44DFC742496E48300971E0D /* IAPHelper.swift in Sources */,
 				737BAF5D2B629C8C00C4E981 /* ZLSwipeableViewController.swift in Sources */,
 				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
 				73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */,
+				737BAF812B62B2A400C4E981 /* CustomSwipeDemoViewController.swift in Sources */,
+				737BAF7B2B62B29600C4E981 /* AlwaysSwipeDemoViewController.swift in Sources */,
 				73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */,
 				73B203C62B6202C200D8CC86 /* HomeViewController.swift in Sources */,
+				737BAF7D2B62B29B00C4E981 /* CustomAnimationDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
