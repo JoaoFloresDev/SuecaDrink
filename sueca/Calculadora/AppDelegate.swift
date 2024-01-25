@@ -16,10 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-//
-//        GADMobileAds.configure(withApplicationID: "ca-app-pub-8858389345934911~9506680852")
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-         return true
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let initialViewController = HomeViewController()
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
+
+        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -43,7 +47,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

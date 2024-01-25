@@ -14,6 +14,7 @@ class PurchaseViewController: UIViewController {
     @IBOutlet weak var customNavigator: UINavigationItem!
     @IBOutlet weak var closeButton: UIBarButtonItem!
     @IBOutlet weak var restoreButton: UIBarButtonItem!
+    lazy var loadingAlert = LoadingAlert(in: self)
     
     // MARK: - Variables
     private var products: [SKProduct] = []
@@ -44,7 +45,7 @@ class PurchaseViewController: UIViewController {
         button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         button.clipsToBounds = true
-        button.setTitle("Continuar", for: .normal)
+        button.setTitle("continue".localized(), for: .normal)
         
         // Adicionando a ação ao botão
         button.addTarget(self, action: #selector(didTapActionButton), for: .touchUpInside)
@@ -52,6 +53,11 @@ class PurchaseViewController: UIViewController {
     }()
     
     @objc func didTapActionButton() {
+        loadingAlert.startLoading {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.loadingAlert.stopLoading()
+            }
+        }
         performPurchase(product: products.first)
     }
     
@@ -77,7 +83,7 @@ class PurchaseViewController: UIViewController {
             make.top.equalTo(purchaseBenetList.snp.bottom).offset(35)
         }
     }
-    
+     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         postNotification(named: "alertWillBePresented")
@@ -99,6 +105,11 @@ class PurchaseViewController: UIViewController {
     }
     
     @IBAction func restorePressed(_ sender: Any) {
+        loadingAlert.startLoading {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                self.loadingAlert.stopLoading()
+            }
+        }
         RazeFaceProducts.store.restorePurchases()
         confirmCheckmark()
     }
@@ -168,5 +179,40 @@ class PurchaseViewController: UIViewController {
         customNavigator.title = String()
         closeButton.title = "close".localized()
         restoreButton.title = "restore".localized()
+    }
+}
+
+struct LoadingAlert {
+    private var alert: UIAlertController?
+    private var viewController: UIViewController
+    
+    // Inicializador que recebe a ViewController
+    init(in viewController: UIViewController) {
+        self.viewController = viewController
+        
+        alert = UIAlertController(title: String(), message: String(), preferredStyle: .alert)
+        alert?.view.backgroundColor = .clear
+        alert?.view.subviews.forEach({ view in
+            view.removeFromSuperview()
+        })
+        
+        let loadingIndicator = UIActivityIndicatorView(style: .large)
+        loadingIndicator.center = CGPoint(x: 0, y: 0)
+        loadingIndicator.color = .systemBlue
+        loadingIndicator.startAnimating()
+
+        alert?.view.addSubview(loadingIndicator)
+    }
+
+    func startLoading(completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            viewController.present(alert!, animated: true, completion: completion)
+        }
+    }
+    
+    func stopLoading(completion: (() -> Void)? = nil) {
+        DispatchQueue.main.async {
+            self.alert?.dismiss(animated: true, completion: completion)
+        }
     }
 }

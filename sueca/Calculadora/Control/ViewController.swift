@@ -8,6 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
+import SnapKit
 
 var vetCardsImgName: [String] = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
 var vetTitleText: [String] =
@@ -94,16 +95,10 @@ var vetDescriptionText: [String] =
         "13_description".localized(),
     ]
 
-class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewControllerDelegate {
-    func purchased() {
-        viewDescriptionConstraint.constant = 240
-        textBottomConstraint.constant = 30
-        bannerView.removeFromSuperview()
-    }
-    
+class ViewController: UIViewController, GADBannerViewDelegate {
     
     //    MARK: - Variables
-    var bannerView: GADBannerView!
+    var bannerView: GADBannerView?
     
     var lastValue = 100
     var ratingShow = false
@@ -114,9 +109,8 @@ class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewContr
     @IBOutlet weak var titleText: UILabel!
     @IBOutlet weak var descriptionText: UILabel!
     @IBOutlet weak var cardImg: UIImageView!
-    
-    @IBOutlet weak var mktPlaceholder: UIImageView!
     @IBOutlet weak var viewDescription: UIView!
+    
     //    MARK: - IBAction
     @IBAction func newCardAction(_ sender: Any) {
         var newCard = Int.random(in: 0 ..< vetCardsImgName.count)
@@ -152,23 +146,55 @@ class ViewController: UIViewController, GADBannerViewDelegate, PurchaseViewContr
         titleText.text = "welcomeTitle".localized()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
-        addBannerViewToView(bannerView)
-        bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
-        bannerView.rootViewController = self
-
-        bannerView.load(GADRequest())
-        bannerView.delegate = self
+    override func viewDidAppear(_ animated: Bool) {
+        if !(RazeFaceProducts.store.isProductPurchased("noads.joker") || UserDefaults.standard.bool(forKey: "premiumPurchased")) {
+            if check30DaysPassed() {
+                let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
+                let purchaseVC = storyboard.instantiateViewController(withIdentifier: "Purchase")
+                self.present(purchaseVC, animated: true)
+            }
+        }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
-        let purchaseVC = storyboard.instantiateViewController(withIdentifier: "Purchase")
-        if let purchaseVC = purchaseVC as? PurchaseViewController {
-            purchaseVC.delegate = self
+    func saveTodayDate() {
+        let now = Date()
+        UserDefaults.standard.set(now, forKey: "LastSavedDate")
+    }
+
+    func check30DaysPassed() -> Bool {
+        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
+            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
+            if dayDifference >= 14 {
+                saveTodayDate()
+                return true
+            } else {
+                return false
+            }
         }
-        self.present(purchaseVC, animated: true)
+        saveTodayDate()
+        return false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if RazeFaceProducts.store.isProductPurchased("noads.joker") || UserDefaults.standard.bool(forKey: "premiumPurchased") {
+            viewDescriptionConstraint.constant = 240
+            textBottomConstraint.constant = 30
+            if let bannerView = bannerView {
+                bannerView.removeFromSuperview()
+                bannerView.isHidden = true
+            }
+        } else {
+            bannerView = GADBannerView(adSize: kGADAdSizeLargeBanner)
+            guard let bannerView = bannerView else {
+                return
+            }
+            addBannerViewToView(bannerView)
+            bannerView.adUnitID = "ca-app-pub-8858389345934911/5780022981"
+            bannerView.rootViewController = self
+
+            bannerView.load(GADRequest())
+            bannerView.delegate = self
+        }
     }
     
     //    MARK: - Functions

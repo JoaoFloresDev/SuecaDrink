@@ -13,6 +13,7 @@
 		3D6EA10B2237EBE500174399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA1092237EBE500174399 /* Main.storyboard */; };
 		3D6EA10D2237EBE900174399 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10C2237EBE900174399 /* Assets.xcassets */; };
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
+		73B203C62B6202C200D8CC86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B203C52B6202C200D8CC86 /* HomeViewController.swift */; };
 		73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */; };
 		73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */; };
 		73BD06572B0BB0D400205E4B /* DiamondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06522B0BB07A00205E4B /* DiamondView.swift */; };
@@ -37,6 +38,7 @@
 		3D6EA10F2237EBE900174399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D6EA1112237EBE900174399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
+		73B203C52B6202C200D8CC86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
 		73BD06522B0BB07A00205E4B /* DiamondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				3D6EA1072237EBE500174399 /* ViewController.swift */,
 				C4885CF3236CBADC004B1556 /* CardsViewController.swift */,
+				73B203C52B6202C200D8CC86 /* HomeViewController.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				C44DFC772496E48300971E0D /* RazeFaceProducts.swift in Sources */,
 				73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */,
 				73BD06582B0BB0D700205E4B /* PurchaseBenetList.swift in Sources */,
+				73B203C62B6202C200D8CC86 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
