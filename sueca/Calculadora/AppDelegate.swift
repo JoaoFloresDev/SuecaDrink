@@ -19,8 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         window = UIWindow(frame: UIScreen.main.bounds)
-        let initialViewController = HomeViewController()
-        window?.rootViewController = initialViewController
+        let controller = HomeViewController()
+        let navigation = UINavigationController(rootViewController: HomeViewController())
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
 
         return true

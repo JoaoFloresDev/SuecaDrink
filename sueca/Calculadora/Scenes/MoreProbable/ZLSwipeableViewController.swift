@@ -4,51 +4,8 @@ import ZLSwipeableViewSwift
 import UIColor_FlatColors
 import Cartography
 
-class HomeViewController: ZLSwipeableViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        swipeableView.numberOfHistoryItem = UInt.max
-        swipeableView.allowedDirection = Direction.All
-
-        let rightBarButtonItemTitle = "Rewind"
-
-        func updateRightBarButtonItem() {
-            let historyLength = self.swipeableView.history.count
-            let enabled = historyLength != 0
-            self.navigationItem.rightBarButtonItem?.isEnabled = enabled
-            if !enabled {
-                self.navigationItem.rightBarButtonItem?.title = rightBarButtonItemTitle
-                return
-            }
-            let suffix = " (\(historyLength))"
-            self.navigationItem.rightBarButtonItem?.title = "\(rightBarButtonItemTitle)\(suffix)"
-        }
-
-        swipeableView.didSwipe = {view, direction, vector in
-            print("Did swipe view in direction: \(direction)")
-            updateRightBarButtonItem()
-        }
-
-        // ↺
-        let rightButton = UIBarButtonItem(title: rightBarButtonItemTitle, style: .plain, target: self, action: #selector(rightButtonClicked))
-        navigationItem.rightBarButtonItem = rightButton
-
-        updateRightBarButtonItem()
-    }
-    
-    // MARK: - Actions
-    
-    @objc func rightButtonClicked() {
-        self.swipeableView.rewind()
-        // updateRightBarButtonItem()
-    }
-
-}
-
 class ZLSwipeableViewController: UIViewController {
-
+    
     var swipeableView: ZLSwipeableView!
     
     var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
@@ -90,7 +47,7 @@ class ZLSwipeableViewController: UIViewController {
         
         let items = [fixedSpace, reloadBarButtonItem!, flexibleSpace, leftBarButtonItem!, flexibleSpace, upBarButtonItem!, flexibleSpace, rightBarButtonItem!, flexibleSpace, downBarButtonItem!, fixedSpace]
         toolbarItems = items
-
+        
         swipeableView = ZLSwipeableView()
         view.addSubview(swipeableView)
         swipeableView.didStart = {view, location in
@@ -114,7 +71,7 @@ class ZLSwipeableViewController: UIViewController {
         swipeableView.didDisappear = { view in
             print("Did disappear swiping view")
         }
-
+        
         constrain(swipeableView, view) { view1, view2 in
             view1.left == view2.left+50
             view1.right == view2.right-50
@@ -173,25 +130,25 @@ class ZLSwipeableViewController: UIViewController {
         if colorIndex >= colors.count {
             colorIndex = 0
         }
-
+        
         let cardView = CardView(frame: swipeableView.bounds)
         cardView.backgroundColor = colorForName(colors[colorIndex])
         colorIndex += 1
-
+        
         if loadCardsFromXib {
             let contentView = Bundle.main.loadNibNamed("CardContentView", owner: self, options: nil)?.first! as! UIView
             contentView.translatesAutoresizingMaskIntoConstraints = false
             contentView.backgroundColor = cardView.backgroundColor
             cardView.addSubview(contentView)
-
+            
             // This is important:
             // https://github.com/zhxnlai/ZLSwipeableView/issues/9
             /*// Alternative:
-            let metrics = ["width":cardView.bounds.width, "height": cardView.bounds.height]
-            let views = ["contentView": contentView, "cardView": cardView]
-            cardView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[contentView(width)]", options: .AlignAllLeft, metrics: metrics, views: views))
-            cardView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[contentView(height)]", options: .AlignAllLeft, metrics: metrics, views: views))
-            */
+             let metrics = ["width":cardView.bounds.width, "height": cardView.bounds.height]
+             let views = ["contentView": contentView, "cardView": cardView]
+             cardView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[contentView(width)]", options: .AlignAllLeft, metrics: metrics, views: views))
+             cardView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[contentView(height)]", options: .AlignAllLeft, metrics: metrics, views: views))
+             */
             constrain(contentView, cardView) { view1, view2 in
                 view1.left == view2.left
                 view1.top == view2.top
@@ -201,7 +158,7 @@ class ZLSwipeableViewController: UIViewController {
         }
         return cardView
     }
-
+    
     func colorForName(_ name: String) -> UIColor {
         let sanitizedName = name.replacingOccurrences(of: " ", with: "")
         let selector = "flat\(sanitizedName)Color"
@@ -209,28 +166,3 @@ class ZLSwipeableViewController: UIViewController {
     }
 }
 
-class CardView: UIView {
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-
-    func setup() {
-        // Shadow
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.25
-        layer.shadowOffset = CGSize(width: 0, height: 1.5)
-        layer.shadowRadius = 4.0
-        layer.shouldRasterize = true
-        layer.rasterizationScale = UIScreen.main.scale
-        
-        // Corner Radius
-        layer.cornerRadius = 10.0;
-    }
-}
