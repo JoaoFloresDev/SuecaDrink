@@ -5,6 +5,7 @@ import UIColor_FlatColors
 import Cartography
 
 class HomeViewController: ZLSwipeableViewController {
+    let rightBarButtonItemTitle = "↻"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -12,23 +13,8 @@ class HomeViewController: ZLSwipeableViewController {
         swipeableView.numberOfHistoryItem = UInt.max
         swipeableView.allowedDirection = Direction.All
         
-        let rightBarButtonItemTitle = "Rewind"
-        
-        func updateRightBarButtonItem() {
-            let historyLength = self.swipeableView.history.count
-            let enabled = historyLength != 0
-            self.navigationItem.rightBarButtonItem?.isEnabled = enabled
-            if !enabled {
-                self.navigationItem.rightBarButtonItem?.title = rightBarButtonItemTitle
-                return
-            }
-            let suffix = " (\(historyLength))"
-            self.navigationItem.rightBarButtonItem?.title = "\(rightBarButtonItemTitle)\(suffix)"
-        }
-        
         swipeableView.didSwipe = {view, direction, vector in
-            print("Did swipe view in direction: \(direction)")
-            updateRightBarButtonItem()
+            self.updateRightBarButtonItem()
         }
         
         // ↺
@@ -38,10 +24,20 @@ class HomeViewController: ZLSwipeableViewController {
         updateRightBarButtonItem()
     }
     
-    // MARK: - Actions
+    func updateRightBarButtonItem() {
+        let historyLength = self.swipeableView.history.count
+        let enabled = historyLength != 0
+        self.navigationItem.rightBarButtonItem?.isEnabled = enabled
+        if !enabled {
+            self.navigationItem.rightBarButtonItem?.title = rightBarButtonItemTitle
+            return
+        }
+        let suffix = " (\(historyLength))"
+        self.navigationItem.rightBarButtonItem?.title = "\(rightBarButtonItemTitle)\(suffix)"
+    }
     
     @objc func rightButtonClicked() {
         self.swipeableView.rewind()
-        // updateRightBarButtonItem()
+        updateRightBarButtonItem()
     }
 }

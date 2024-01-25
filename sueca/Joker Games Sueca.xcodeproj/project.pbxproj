@@ -15,6 +15,7 @@
 		3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6EA10E2237EBE900174399 /* LaunchScreen.storyboard */; };
 		737BAF5B2B629C6100C4E981 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF5A2B629C6100C4E981 /* CardView.swift */; };
 		737BAF5D2B629C8C00C4E981 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */; };
+		737BAF5F2B62AB4600C4E981 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 737BAF5E2B62AB4600C4E981 /* CardContentView.xib */; };
 		73B203C62B6202C200D8CC86 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B203C52B6202C200D8CC86 /* HomeViewController.swift */; };
 		73BD06552B0BB0D000205E4B /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */; };
 		73BD06562B0BB0D200205E4B /* PurchaseHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */; };
@@ -42,6 +43,7 @@
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
 		737BAF5A2B629C6100C4E981 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
+		737BAF5E2B62AB4600C4E981 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		73B203C52B6202C200D8CC86 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73BD06502B0BB07A00205E4B /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
 		73BD06512B0BB07A00205E4B /* PurchaseHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHeaderView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		737BAF592B629BE600C4E981 /* MoreProbable */ = {
 			isa = PBXGroup;
 			children = (
+				737BAF5E2B62AB4600C4E981 /* CardContentView.xib */,
 				73B203C52B6202C200D8CC86 /* HomeViewController.swift */,
 				737BAF5A2B629C6100C4E981 /* CardView.swift */,
 				737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */,
@@ -268,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737BAF5F2B62AB4600C4E981 /* CardContentView.xib in Resources */,
 				C4B9268D26B72BAC008A79F6 /* Localizable.strings in Resources */,
 				73BD06592B0BB0EA00205E4B /* Purchase.storyboard in Resources */,
 				3D6EA1102237EBE900174399 /* LaunchScreen.storyboard in Resources */,
