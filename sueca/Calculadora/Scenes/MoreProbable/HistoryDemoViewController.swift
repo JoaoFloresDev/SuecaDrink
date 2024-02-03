@@ -15,17 +15,17 @@ class HistoryDemoViewController: ZLSwipeableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Joker"
         swipeableView.numberOfHistoryItem = UInt.max
         swipeableView.allowedDirection = [.Left, .Right]
 
-        // ↺
         let rightButton = UIBarButtonItem(title: rightBarButtonItemTitle, style: .plain, target: self, action: #selector(rightButtonClicked))
         navigationItem.rightBarButtonItem = rightButton
     }
     
     // MARK: - Actions
-    @objc func rightButtonClicked() {
+    @objc 
+    func rightButtonClicked() {
         self.swipeableView.rewind()
     }
-
 }

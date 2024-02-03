@@ -17,18 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         GADMobileAds.sharedInstance().start(completionHandler: nil)
-
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let controller = HomeViewController()
-//        let navigation = UINavigationController(rootViewController: HomeViewController())
-//        window?.rootViewController = navigation
-//        window?.makeKeyAndVisible()
-//
-//        return true
         
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window {
-            let menuViewController = MenuTableViewController(style: .grouped)
+            let menuViewController = HomeViewController()
             window.rootViewController = UINavigationController(rootViewController: menuViewController)
             window.makeKeyAndVisible()
         }

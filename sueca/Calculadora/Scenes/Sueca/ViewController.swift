@@ -142,6 +142,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     //    MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Joker"
         descriptionText.text = "welcomeMessage".localized()
         titleText.text = "welcomeTitle".localized()
     }

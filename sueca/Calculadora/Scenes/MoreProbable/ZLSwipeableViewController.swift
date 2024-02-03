@@ -8,7 +8,27 @@ class ZLSwipeableViewController: UIViewController {
     
     var swipeableView: ZLSwipeableView!
     
-    var colors = ["Turquoise", "Green Sea", "Emerald", "Nephritis", "Peter River", "Belize Hole", "Amethyst", "Wisteria", "Wet Asphalt", "Midnight Blue", "Sun Flower", "Orange", "Carrot", "Pumpkin", "Alizarin", "Pomegranate", "Clouds", "Silver", "Concrete", "Asbestos"]
+        let vibrantColors: [UIColor] = [
+            UIColor(red: 0.00, green: 0.75, blue: 0.58, alpha: 1.0), // Turquesa
+            UIColor(red: 0.98, green: 0.66, blue: 0.21, alpha: 1.0), // Laranja
+            UIColor(red: 0.49, green: 0.83, blue: 0.13, alpha: 1.0), // Verde Limão
+            UIColor(red: 0.18, green: 0.80, blue: 0.44, alpha: 1.0), // Verde Esmeralda
+            UIColor(red: 0.20, green: 0.60, blue: 0.86, alpha: 1.0), // Azul Celeste
+            UIColor(red: 0.58, green: 0.00, blue: 0.83, alpha: 1.0), // Roxo
+            UIColor(red: 0.91, green: 0.12, blue: 0.39, alpha: 1.0), // Rosa Choque
+            UIColor(red: 0.67, green: 0.31, blue: 0.32, alpha: 1.0), // Terracota
+            UIColor(red: 0.00, green: 0.45, blue: 0.73, alpha: 1.0), // Azul Marinho
+            UIColor(red: 0.40, green: 0.23, blue: 0.72, alpha: 1.0), // Roxo Escuro
+            UIColor(red: 0.95, green: 0.77, blue: 0.06, alpha: 1.0), // Amarelo Mostarda
+            UIColor(red: 0.00, green: 0.62, blue: 0.45, alpha: 1.0), // Verde Teal
+            UIColor(red: 0.82, green: 0.01, blue: 0.11, alpha: 1.0), // Carmesim
+            UIColor(red: 0.00, green: 0.20, blue: 0.40, alpha: 1.0), // Azul Petróleo
+            UIColor(red: 0.96, green: 0.49, blue: 0.00, alpha: 1.0), // Laranja Escuro
+            UIColor(red: 0.59, green: 0.29, blue: 0.00, alpha: 1.0), // Marrom
+            UIColor(red: 0.36, green: 0.54, blue: 0.66, alpha: 1.0)  // Azul Aço
+        ]
+
+    
     
     let questions = [
         "Quem é mais provável que acabe na cadeia?",
@@ -125,7 +145,8 @@ class ZLSwipeableViewController: UIViewController {
         "Ficar com dor de barriga de tanto comer chocolate?",
         "Fazer uma tatuagem e se arrepender?"
     ]
-
+    
+    var questionIndexShowed: [Int] = []
     var colorIndex = 0
     
     override func viewDidLayoutSubviews() {
@@ -139,24 +160,24 @@ class ZLSwipeableViewController: UIViewController {
         print("Segmented control changed to index: \(sender.selectedSegmentIndex)")
     }
     
+    private let backgroundView: UIImageView = {
+       let imageView = UIImageView()
+        imageView.image = UIImage(named: "wood edit")
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setToolbarHidden(false, animated: false)
         view.backgroundColor = UIColor.white
         view.clipsToBounds = true
         
-        let items = ["Todos", "Eu nunca", "Provável", "★"]
-        let segmentedControl = UISegmentedControl(items: items)
+        view.addSubview(backgroundView)
+        backgroundView.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+        }
         
         let height: CGFloat = 60
-        segmentedControl.frame = CGRect(x: 0, y: 0, width: segmentedControl.frame.width, height: height)
-        segmentedControl.selectedSegmentIndex = 0
-        
-        segmentedControl.addTarget(self, action: #selector(segmentedControlChanged(_:)), for: .valueChanged)
-
-        let segmentedControlBarItem = UIBarButtonItem(customView: segmentedControl)
-
-        toolbarItems = [segmentedControlBarItem]
         navigationController?.isToolbarHidden = false
         
         swipeableView = ZLSwipeableView()
@@ -172,28 +193,45 @@ class ZLSwipeableViewController: UIViewController {
     
     // MARK: ()
     func nextCardView() -> UIView? {
-        if colorIndex >= colors.count {
-            colorIndex = 0
+        if colorIndex == 0 {
+            let cardView = CardView(frame: swipeableView.bounds)
+            cardView.backgroundColor = vibrantColors[colorIndex]
+            cardView.titleLabel.text = "Como Jogar?"
+            let index = Int.random(in: 0..<questions.count)
+            cardView.descriptionLabel.text = "Quando uma carta é revelada, todos os jogadores devem simultaneamente apontar para a pessoa que mais se encaixa com a descrição da pergunta. \nPerdem a partida:\n\n-A pessoa mais votada.\n\n- Os jogadores que apontaram para alguém diferente da pessoa mais votada."
+            // Configurando a fonte para negrito e itálico
+            let fontDescriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .headline)
+                .withSymbolicTraits([.traitBold, .traitItalic])
+            if let fontDescriptor = fontDescriptor {
+                cardView.descriptionLabel.font = UIFont(descriptor: fontDescriptor, size: 18)
+            } else {
+                cardView.descriptionLabel.font = UIFont.systemFont(ofSize: 18)
+            }
+            colorIndex += 1
+            return cardView
+        }
+            
+        if colorIndex >= vibrantColors.count {
+            colorIndex = 1
         }
         
         let cardView = CardView(frame: swipeableView.bounds)
-        cardView.backgroundColor = colorForName(colors[colorIndex])
         
         if Int.random(in: 0...10) > 0 {
-            cardView.titleLabel.text = "Mais provável"
-            let index = Int.random(in: 0..<questions.count)
+            cardView.backgroundColor = vibrantColors[colorIndex]
+            cardView.titleLabel.text = "Aponte para o mais provável"
+            
+            var index = Int.random(in: 0..<questions.count)
+            while questionIndexShowed.contains(index) {
+                index = Int.random(in: 0..<questions.count)
+            }
+            questionIndexShowed.append(index)
             cardView.descriptionLabel.text = questions[index]
         } else {
+            cardView.backgroundColor = .red
             cardView.titleLabel.text = "Eu nunca"
-            cardView.descriptionLabel.text = "Faça uma afirmação, todos que já tenham feito perdem"
+            cardView.descriptionLabel.text = "Faça uma afirmação, todos que já tenham feito, perdem"
         }
-        
-        
-        
-        
-        
-        
-        
         colorIndex += 1
         return cardView
     }

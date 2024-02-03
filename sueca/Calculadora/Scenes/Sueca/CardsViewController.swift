@@ -47,12 +47,7 @@ class CardsViewController: UIViewController {
             description.text = vetDescriptionText[index]
         }
         
-        rolesLabel.text = "roles".localized()
-        closeButton.setTitle("close".localized(), for: .normal)
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        proVersionView.addGestureRecognizer(tapGesture)
-        proVersionView.isUserInteractionEnabled = true
     }
     
     @objc private func handleTap() {
