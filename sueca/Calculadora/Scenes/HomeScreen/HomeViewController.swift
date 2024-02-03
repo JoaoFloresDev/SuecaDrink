@@ -16,7 +16,7 @@ class HomeViewController: UIViewController {
 
     private let button2: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Mais provável", for: .normal)
+        button.setTitle("mostProbable".localized(), for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 26)
         button.layer.cornerRadius = 10
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
 
     private let button3: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Versão premium", for: .normal)
+        button.setTitle("premiumVersion".localized(), for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 26)
         button.layer.cornerRadius = 10
@@ -37,27 +37,55 @@ class HomeViewController: UIViewController {
     private let backgroundView: UIImageView = {
        let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: "wood edit 1")
+        imageView.image = UIImage(named: "wood edit")
         return imageView
     }()
     
-    private let backgroundView2: UIImageView = {
+    private let iconImage: UIImageView = {
        let imageView = UIImageView()
-        imageView.backgroundColor = .black
-        imageView.alpha = 0.1
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = UIImage(named: "iconSueca")
         return imageView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        
+        if !(RazeFaceProducts.store.isProductPurchased("noads.joker") || UserDefaults.standard.bool(forKey: "premiumPurchased")) {
+            if check30DaysPassed() {
+                let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
+                let purchaseVC = storyboard.instantiateViewController(withIdentifier: "Purchase")
+                self.present(purchaseVC, animated: true)
+            }
+        }
+    }
+    
+    func saveTodayDate() {
+        let now = Date()
+        UserDefaults.standard.set(now, forKey: "LastSavedDate")
+    }
+
+    func check30DaysPassed() -> Bool {
+        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
+            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
+            if dayDifference >= 14 {
+                saveTodayDate()
+                return true
+            } else {
+                return false
+            }
+        }
+        saveTodayDate()
+        return false
     }
     
     private func setupViews() {
         view.backgroundColor = .white
         
         view.addSubview(backgroundView)
-        view.addSubview(backgroundView2)
+        view.addSubview(iconImage)
+        
         view.addSubview(button1)
         view.addSubview(button2)
         view.addSubview(button3)
@@ -89,8 +117,10 @@ class HomeViewController: UIViewController {
             make.edges.equalToSuperview()
         }
         
-        backgroundView2.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        iconImage.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(-24)
+            make.width.height.equalTo(300)
         }
 
         navigationController?.navigationBar.tintColor = UIColor.white
@@ -122,9 +152,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        button1.applyGradient(colors: [UIColor.blue, UIColor.systemBlue], locations: [0.0, 1.0])
-        button2.applyGradient(colors: [UIColor.blue, UIColor.systemBlue], locations: [0.0, 1.0])
+
+        button1.applyGradient(colors: [UIColor(hex: "560000", alpha: 1), UIColor(hex: "710000", alpha: 1)], locations: [0.0, 1.0])
+        button2.applyGradient(colors: [UIColor(hex: "560000", alpha: 1), UIColor(hex: "710000", alpha: 1)], locations: [0.0, 1.0])
         button3.applyGradient2(colors: [UIColor(red: 0.95, green: 0.77, blue: 0.06, alpha: 0.8), UIColor(red: 0.85, green: 0.65, blue: 0.13, alpha: 0.8)], locations: [0.0, 1.0])
     }
 
@@ -151,7 +181,7 @@ extension UIButton {
     func applyGradient(colors: [UIColor], locations: [NSNumber]? = nil) {
         let gradientLayer = CAGradientLayer()
         // Ajusta as cores para aplicar o alpha de 0.8
-        let alphaColors = colors.map { $0.withAlphaComponent(0.8).cgColor }
+        let alphaColors = colors.map { $0.withAlphaComponent(0.9).cgColor }
         gradientLayer.colors = alphaColors
         gradientLayer.locations = locations
         gradientLayer.frame = self.bounds

@@ -146,38 +146,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         descriptionText.text = "welcomeMessage".localized()
         titleText.text = "welcomeTitle".localized()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if !(RazeFaceProducts.store.isProductPurchased("noads.joker") || UserDefaults.standard.bool(forKey: "premiumPurchased")) {
-            if check30DaysPassed() {
-                let storyboard = UIStoryboard(name: "Purchase",bundle: nil)
-                let purchaseVC = storyboard.instantiateViewController(withIdentifier: "Purchase")
-                self.present(purchaseVC, animated: true)
-            }
-        }
-    }
-    
-    func saveTodayDate() {
-        let now = Date()
-        UserDefaults.standard.set(now, forKey: "LastSavedDate")
-    }
-
-    func check30DaysPassed() -> Bool {
-        if let lastSavedDate = UserDefaults.standard.object(forKey: "LastSavedDate") as? Date {
-            let dayDifference = Calendar.current.dateComponents([.day], from: lastSavedDate, to: Date()).day ?? 0
-            if dayDifference >= 14 {
-                saveTodayDate()
-                return true
-            } else {
-                return false
-            }
-        }
-        saveTodayDate()
-        return false
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+        
         if RazeFaceProducts.store.isProductPurchased("noads.joker") || UserDefaults.standard.bool(forKey: "premiumPurchased") {
             viewDescriptionConstraint.constant = 240
             textBottomConstraint.constant = 30
@@ -241,22 +210,10 @@ class ViewController: UIViewController, GADBannerViewDelegate {
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
-        view.addConstraints(
-            [NSLayoutConstraint(item: bannerView,
-                                attribute: .bottom,
-                                relatedBy: .equal,
-                                toItem: bottomLayoutGuide,
-                                attribute: .top,
-                                multiplier: 1,
-                                constant: 0),
-             NSLayoutConstraint(item: bannerView,
-                                attribute: .centerX,
-                                relatedBy: .equal,
-                                toItem: view,
-                                attribute: .centerX,
-                                multiplier: 1,
-                                constant: 0)
-            ])
+        bannerView.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            make.centerX.equalToSuperview()
+        }
     }
     
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {

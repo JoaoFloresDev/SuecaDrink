@@ -1,0 +1,45 @@
+/*
+  Localizable.strings
+  Joker Games Sueca
+
+  Created by Joao Flores on 01/08/21.
+  Copyright © 2021 Gustavo Lima. All rights reserved.
+*/
+
+"welcomeMessage" = "¡Buen juego! \n\nTodos los jugadores comienzan con 20 puntos";
+"welcomeTitle" = "Haz clic en la carta para comenzar";
+
+"1_title" = "Un enemigo";
+"2_title" = "Dos enemigos";
+"3_title" = "Tres enemigos";
+"4_title" = "Salida";
+"5_title" = "Yo nunca";
+"6_title" = "Continencia";
+"7_title" = "PI";
+"8_title" = "Palabra no dicha";
+"9_title" = "C o S";
+"10_title" = "Crea una regla";
+"11_title" = "Los hombres pierden";
+"12_title" = "Las mujeres pierden";
+"13_title" = "Todos pierden";
+
+"1_description" = "Elige un jugador para perder.";
+"2_description" = "Elige dos jugadores para que pierdan.";
+"3_description" = "Elige tres jugadores para que pierdan.";
+"4_description" = "Permite al jugador ir al baño. Esta carta también puede ser guardada y negociada.";
+"5_description" = "El juego consiste en que alguien levante una negación, todos aquellos que ya lo hayan hecho, pierden.";
+"6_description" = "En cualquier momento del juego, puedes poner la mano en la frente, haciendo continencia. El último que se dé cuenta y haga continencia, pierde.";
+"7_description" = "Inicia un conteo ascendente comenzando en 1, múltiplos de 3 y aquellos que contengan 3 son reemplazados por PI, quien se equivoque pierde. Ej: 1, 2, PI, 4, 5, PI, 7, 8, PI.";
+"8_description" = "Elige una palabra que no pueda ser dicha. Quien la diga pierde.";
+"9_description" = "Están prohibidas las palabras que comiencen con C o S. Di una palabra, el siguiente jugador debe decir otra del mismo tema, siguiendo hasta que alguien falle.";
+"10_description" = "Determina una regla para que todos obedezcan. Ejemplo: “Solo se puede hablar de pie”. Quien rompa la regla, pierde.";
+"11_description" = "Todos los hombres en el juego pierden.";
+"12_description" = "Todas las mujeres en el juego pierden.";
+"13_description" = "Todos los jugadores pierden.";
+
+"roles" = "Reglas";
+"close" = "Cerrar";
+"restore" = "Restaurar";
+"continue" = "Continuar";
+"mostProbable" = "Más probable";
+"premiumVersion" = "Versión premium";

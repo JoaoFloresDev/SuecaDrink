@@ -53,6 +53,15 @@
 		3D6EA1112237EBE900174399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C75A0E361E963A8CFC343B6 /* Pods-Sueca Drink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sueca Drink.debug.xcconfig"; path = "Target Support Files/Pods-Sueca Drink/Pods-Sueca Drink.debug.xcconfig"; sourceTree = "<group>"; };
 		7318238F2B6C526B00BA355B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		735D49242B6EE66300A39CEE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		735D49252B6EE66300A39CEE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		735D49262B6EE66400A39CEE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		735D49272B6EE69200A39CEE /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Main.strings"; sourceTree = "<group>"; };
+		735D49282B6EE69300A39CEE /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		735D49292B6EE69300A39CEE /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		735D492A2B6EE6D900A39CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		735D492B2B6EE6D900A39CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		735D492C2B6EE6D900A39CEE /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		737BAF5A2B629C6100C4E981 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		737BAF5C2B629C8C00C4E981 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
 		737BAF602B62B0F900C4E981 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
@@ -306,6 +315,9 @@
 				en,
 				Base,
 				"pt-BR",
+				es,
+				"es-AR",
+				"es-419",
 			);
 			mainGroup = 3D6EA0F92237EBE500174399;
 			productRefGroup = 3D6EA1032237EBE500174399 /* Products */;
@@ -417,6 +429,9 @@
 				3D6EA10A2237EBE500174399 /* Base */,
 				C4B9268B26B72B5E008A79F6 /* pt-BR */,
 				73BD065B2B0BB2AA00205E4B /* en */,
+				735D49242B6EE66300A39CEE /* es */,
+				735D49272B6EE69200A39CEE /* es-AR */,
+				735D492A2B6EE6D900A39CEE /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -426,6 +441,9 @@
 			children = (
 				3D6EA10F2237EBE900174399 /* Base */,
 				C4B9268C26B72B60008A79F6 /* pt-BR */,
+				735D49252B6EE66300A39CEE /* es */,
+				735D49282B6EE69300A39CEE /* es-AR */,
+				735D492B2B6EE6D900A39CEE /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -435,6 +453,9 @@
 			children = (
 				C4B9268E26B72BAC008A79F6 /* en */,
 				C4B9269026B72BB5008A79F6 /* pt-BR */,
+				735D49262B6EE66400A39CEE /* es */,
+				735D49292B6EE69300A39CEE /* es-AR */,
+				735D492C2B6EE6D900A39CEE /* es-419 */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -574,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 25;
+				MARKETING_VERSION = 27;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
@@ -596,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 25;
+				MARKETING_VERSION = 27;
 				PRODUCT_BUNDLE_IDENTIFIER = joaoFlores.Sueca;
 				PRODUCT_NAME = "Sueca Drink";
 				SWIFT_VERSION = 5.0;
