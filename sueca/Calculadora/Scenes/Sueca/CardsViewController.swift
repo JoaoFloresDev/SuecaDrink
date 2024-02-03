@@ -47,7 +47,22 @@ class CardsViewController: UIViewController {
             description.text = vetDescriptionText[index]
         }
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        title = "roles".localized()
+        
+        if let tabBar = self.tabBarController?.tabBar {
+            tabBar.backgroundImage = UIImage()
+            tabBar.shadowImage = UIImage()
+            tabBar.isTranslucent = true
+            tabBar.backgroundColor = .clear
+        }
+
+        if let toolbar = self.navigationController?.toolbar {
+            toolbar.setBackgroundImage(UIImage(), forToolbarPosition: .any, barMetrics: .default)
+            toolbar.setShadowImage(UIImage(), forToolbarPosition: .any)
+            toolbar.isTranslucent = true
+            toolbar.backgroundColor = .clear
+        }
+
     }
     
     @objc private func handleTap() {

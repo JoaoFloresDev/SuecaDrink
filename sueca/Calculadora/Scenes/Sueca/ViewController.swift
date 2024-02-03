@@ -145,6 +145,7 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         title = "Joker"
         descriptionText.text = "welcomeMessage".localized()
         titleText.text = "welcomeTitle".localized()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {

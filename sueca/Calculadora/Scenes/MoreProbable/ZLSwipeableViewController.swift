@@ -162,6 +162,7 @@ class ZLSwipeableViewController: UIViewController {
     
     private let backgroundView: UIImageView = {
        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.image = UIImage(named: "wood edit")
         return imageView
     }()
